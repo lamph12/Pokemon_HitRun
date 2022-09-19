@@ -225,6 +225,8 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag("Speed"))
         {
             rigidbody.velocity = new Vector3(0, 0, 20);
+            //rigidbody.isKinematic = true;
+            StartCoroutine("Speed");
         }
         //if (other.transform.tag == "Trap_gai")
         //{
@@ -376,4 +378,29 @@ public class PlayerManager : MonoBehaviour
     {
         Debug.Log(dt.transform.childCount);
         for (int i = 0; i < dt.transform.childCount; i++)
-     
+        {
+            pathval_[i] = dt.transform.GetChild(i).gameObject;
+        }
+    }
+    public IEnumerator Speed()
+    {
+        Debug.Log("da vao");
+        rigidbody.isKinematic = true;
+        speed += 20;
+        yield return new WaitForSeconds(0.25f);
+        rigidbody.isKinematic = false;
+        speed -= 20;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

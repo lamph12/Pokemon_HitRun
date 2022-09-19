@@ -5,6 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - enemies
+  - Ball
+  - Plane
+  - PhysicsObject
+  - Trap_gai
+  - coins
+  - Lo_xo
+  - road_2_2
+  - road_2_1
+  - Lo_xo_left
+  - road_1
+  - Lo_xo_Finish
+  - Lo_xo_right
+  - in
+  - out
+  - Speed
   layers:
   - Default
   - TransparentFX

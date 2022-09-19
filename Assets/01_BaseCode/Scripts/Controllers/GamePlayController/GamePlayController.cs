@@ -1,79 +1,101 @@
-using Crystal;
-using UnityEngine;
+//using Crystal;
+//using UnityEngine;
 
-public enum StateGame
-{
-    Loading = 0,
-    Playing = 1,
-    Win = 2,
-    Lose = 3,
-    Pause = 4,
-    UnDecide = 5,
-}
+//public enum StateGame
+//{
+//    Loading = 0,
+//    Playing = 1,
+//    Win = 2,
+//    Lose = 3,
+//    Pause = 4,
+//    UnDecide = 5,
+//}
 
-public class GamePlayController : Singleton<GamePlayController>
-{
-    private static bool isBannerShow;
-    public PlayerContain playerContain;
-    public GameScene gameScene;
+//public class GamePlayController : Singleton<GamePlayController>
+//{
+//    private static bool isBannerShow;
+//    public PlayerContain playerContain;
+//    public GameScene gameScene;
 
   
-    public StateGame state;
+//    public StateGame state;
 
-    [Header("Safe Area")] public SafeArea safeArea;
+//    [Header("Safe Area")] public SafeArea safeArea;
 
-    private void Update()
-    {
+//    private void Update()
+//    {
        
-    }
+//    }
 
-    protected override void OnAwake()
-    {
-        GameController.Instance.currentScene = SceneType.GamePlay;
+//    protected override void OnAwake()
+//    {
+//        GameController.Instance.currentScene = SceneType.GamePlay;
 
-        Init();
-    }
+//        Init();
+//    }
 
-    public void Init()
-    {
-#if UNITY_IOS
-if (safeArea != null)
-            safeArea.enabled = true;
-#endif
+//    public void Init()
+//    {
+//#if UNITY_IOS
+//if (safeArea != null)
+//            safeArea.enabled = true;
+//#endif
         
-        playerContain.Init();
-        InitLevel();
-        gameScene.Init();
-        {
-            GameController.Instance.admobAds.DestroyBanner();
-            GameController.Instance.admobAds.ShowBanner();
-            //isBannerShow = true;
-        }
-    }
+//        playerContain.Init();
+//        //InitLevel();
+//        gameScene.Init();
+//        {
+//            GameController.Instance.admobAds.DestroyBanner();
+//            GameController.Instance.admobAds.ShowBanner();
+//            //isBannerShow = true;
+//        }
+//    }
 
-    public void InitLevel()
-    {
-        
-    }
+//    public void InitLevel(int indexLevel)
+//    {
+//        if (indexLevel > KeyPref.MAX_LEVEL)
+//        {
+//            indexLevel = KeyPref.MAX_LEVEL;
+//        }
+//        //Skip null level [BuildTest]
+//        if (Resources.Load<Level>("Levels/Level_" + indexLevel) == null)
+//        {
+//            GameController.Instance.useProfile.CurrentLevelPlay++;
+//            Init();
+//            return;
+//        }
+//        //change current level here 
+//        // level = Instantiate(Resources.Load<Level>("Levels/Level_" + indexLevel), gameScene.canvasGamePlay.transform);
+//        level = Instantiate(Resources.Load<Level>("Levels/Level_" + 21), gameScene.canvasGamePlay.transform);
 
-    public bool IsShowRate()
-    {
-        if (!UseProfile.CanShowRate)
-            return false;
-        var X = GameController.Instance.useProfile.CurrentLevelPlay - 1;
-        if (X < RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_RATE, 5))
-            return false;
-        if (X == RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_RATE, 5) ||
-            (X <= RemoteConfigController.GetIntConfig(FirebaseConfig.MAX_LEVEL_SHOW_RATE, 31) &&
-             X % 10 == 1)) return true;
-        return false;
-    }
+//        //  level = Instantiate(Resources.Load<Level>("Levels/Level_" + indexLevel), null);
+//        //Load ra level theo Json
 
-    public void PlayAnimFly()
-    {
-    }
+//        if (level != null)
+//        {
+//            level.Init();
+//            state = StateGame.Playing;
+//        }
+//    }
 
-    public void PlayAnimFlyOut()
-    {
-    }
-}
+//    public bool IsShowRate()
+//    {
+//        if (!UseProfile.CanShowRate)
+//            return false;
+//        var X = GameController.Instance.useProfile.CurrentLevelPlay - 1;
+//        if (X < RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_RATE, 5))
+//            return false;
+//        if (X == RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_RATE, 5) ||
+//            (X <= RemoteConfigController.GetIntConfig(FirebaseConfig.MAX_LEVEL_SHOW_RATE, 31) &&
+//             X % 10 == 1)) return true;
+//        return false;
+//    }
+
+//    public void PlayAnimFly()
+//    {
+//    }
+
+//    public void PlayAnimFlyOut()
+//    {
+//    }
+//}

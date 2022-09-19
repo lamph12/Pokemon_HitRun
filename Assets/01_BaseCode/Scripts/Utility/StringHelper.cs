@@ -160,6 +160,7 @@ public class AudioName
 public class KeyPref
 {
     public const string SERVER_INDEX = "SERVER_INDEX";
+    public const int MAX_LEVEL = 200;
 }
 
 public class FirebaseConfig

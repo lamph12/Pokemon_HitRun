@@ -15,6 +15,16 @@ public class Editor_map : Editor
         {
             Map.taomap();
         }
+        if (GUILayout.Button("Creat road_1"))
+        {
+            Map.road_1();
+        }
+        if (GUILayout.Button("Creat road_2"))
+        {
+            Map.road_2();
+        }
+
+
     }
    
 }

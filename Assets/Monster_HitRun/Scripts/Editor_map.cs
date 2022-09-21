@@ -23,6 +23,14 @@ public class Editor_map : Editor
         {
             Map.road_2();
         }
+        if (GUILayout.Button("Creat wall_right"))
+        {
+            Map.creatwall_right();
+        }
+        if (GUILayout.Button("Creat wall_left"))
+        {
+            Map.creatwall_left();
+        }
 
 
     }

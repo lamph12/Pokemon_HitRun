@@ -8,6 +8,8 @@ public class map : MonoBehaviour
     public GameObject objectmap;
     public GameObject road_1map;
     public GameObject road_2map;
+    public GameObject wall_right;
+    public GameObject wall_left;
     public int soluong;
     public float khoangcach;
     //public float vitriz;
@@ -50,6 +52,24 @@ public class map : MonoBehaviour
         obj = Instantiate(road_2map, vitribatdau, road_2map.transform.rotation);
 
 
+    }
+    public void creatwall_right()
+    {
+        GameObject obj;
+        vitribatdau.y = 0;
+        vitribatdau.x = 0;
+        vitribatdau.z -= 157f + 7f;
+        obj = Instantiate(wall_right, vitribatdau, wall_right.transform.rotation);
+        vitribatdau.z += 192f;
+    }
+    public void creatwall_left()
+    {
+        GameObject obj;
+        vitribatdau.y = 0;
+        vitribatdau.x = 0;
+        vitribatdau.z +=52-7f;
+        obj = Instantiate(wall_left, vitribatdau, wall_left.transform.rotation);
+        vitribatdau.z -= 17;
     }
 
 }

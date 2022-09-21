@@ -32,7 +32,7 @@ public class map : MonoBehaviour
             vitribatdau.y = 0;
             vitribatdau.x = 0;
             obj = Instantiate(objectmap, vitribatdau,objectmap.transform.rotation);
-            vitribatdau.z+=7;
+            vitribatdau.z+=khoangcach;
         }
     }
     public void road_1()

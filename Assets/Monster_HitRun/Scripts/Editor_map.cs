@@ -31,6 +31,15 @@ public class Editor_map : Editor
         {
             Map.creatwall_left();
         }
+        if (GUILayout.Button("Back"))
+        {
+            Map.back();
+        }
+        if (GUILayout.Button("Creat Emty"))
+        {
+            Map.createmty();
+        }
+
 
 
     }

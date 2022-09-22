@@ -127,7 +127,7 @@ public class map : MonoBehaviour
     {
         for (int i = 0; i < soluong; i++)
         {
-            vitribatdau.y = 1.5f;
+            vitribatdau.y = 0;
             GameObject obj;
             obj = Instantiate(Coins, vitribatdau, Coins.transform.rotation, Coins_Parent.transform);
             vitribatdau.z += khoangcach;

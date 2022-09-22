@@ -30,11 +30,7 @@ public class Editor_map : Editor
         if (GUILayout.Button("Creat wall_left"))
         {
             Map.creatwall_left();
-        }
-        if (GUILayout.Button("Back"))
-        {
-            Map.back();
-        }
+        }       
         if (GUILayout.Button("Creat Emty"))
         {
             Map.createmty();
@@ -50,6 +46,10 @@ public class Editor_map : Editor
         if (GUILayout.Button("Creat coins/ Coins kc la 2"))
         {
             Map.creat_Coins();
+        }
+        if (GUILayout.Button("Back"))
+        {
+            Map.back();
         }
 
 

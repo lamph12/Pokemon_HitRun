@@ -286,32 +286,32 @@ public class PlayerManager : MonoBehaviour
             if (lvPlayer > 0 && lvPlayer <= 100)
             {
                 transform.localScale = new Vector3(40, 40, 40);//scale0%
-                speed = 14;
+                speed = 17;
             }
             if (lvPlayer > 100 && lvPlayer <= 200)
             {
                 transform.localScale = new Vector3(42, 42, 42);//scale 10%
-                speed = 15;
+                speed = 18;
             }
             if (lvPlayer > 200 && lvPlayer <= 300)
             {
                 transform.localScale = new Vector3(44, 44, 44);//scale 20%
-                speed = 16;
+                speed = 19;
             }
             if (lvPlayer > 300 && lvPlayer <= 400)
             {
                 transform.localScale = new Vector3(46, 46, 46); //scale 30%
-                speed = 16;
+                speed = 20;
             }
             if (lvPlayer > 400 && lvPlayer <= 500)
             {
                 transform.localScale = new Vector3(50, 50, 50); //scale 40%
-                speed = 16.5f;
+                speed = 21;
             }
             if (lvPlayer > 500)
             {
                 transform.localScale = new Vector3(52, 52, 52);//scale  50%
-                speed = 16.5f;
+                speed = 21.5f;
             }
 
         }

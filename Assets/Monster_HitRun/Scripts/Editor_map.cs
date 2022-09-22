@@ -11,7 +11,7 @@ public class Editor_map : Editor
     {
         map Map = (map)target;
         base.OnInspectorGUI();
-        if (GUILayout.Button("Creat map"))
+        if (GUILayout.Button("Creat map /kc la7"))
         {
             Map.taomap();
         }
@@ -39,7 +39,18 @@ public class Editor_map : Editor
         {
             Map.createmty();
         }
-
+        if (GUILayout.Button("Creat Trap/TRap kc la 2 la lien nhau"))
+        {
+            Map.creat_Trap();
+        }
+        if (GUILayout.Button("Creat Loxo/ LOxo kc la 19"))
+        {
+            Map.creat_Loxo();
+        }
+        if (GUILayout.Button("Creat coins/ Coins kc la 2"))
+        {
+            Map.creat_Coins();
+        }
 
 
     }

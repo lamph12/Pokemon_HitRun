@@ -285,32 +285,32 @@ public class PlayerManager : MonoBehaviour
             }
             if (lvPlayer > 0 && lvPlayer <= 100)
             {
-                //transform.localScale = new Vector3(33, 33, 33);//scale0%
-                //speed = 14;
+                transform.localScale = new Vector3(40, 40, 40);//scale0%
+                speed = 14;
             }
             if (lvPlayer > 100 && lvPlayer <= 200)
             {
-                transform.localScale = new Vector3(36, 36, 36);//scale 10%
+                transform.localScale = new Vector3(42, 42, 42);//scale 10%
                 speed = 15;
             }
             if (lvPlayer > 200 && lvPlayer <= 300)
             {
-                transform.localScale = new Vector3(39, 39, 39);//scale 20%
+                transform.localScale = new Vector3(44, 44, 44);//scale 20%
                 speed = 16;
             }
             if (lvPlayer > 300 && lvPlayer <= 400)
             {
-                transform.localScale = new Vector3(42, 42, 42); //scale 30%
+                transform.localScale = new Vector3(46, 46, 46); //scale 30%
                 speed = 16;
             }
             if (lvPlayer > 400 && lvPlayer <= 500)
             {
-                transform.localScale = new Vector3(45, 45, 45); //scale 40%
+                transform.localScale = new Vector3(50, 50, 50); //scale 40%
                 speed = 16.5f;
             }
             if (lvPlayer > 500)
             {
-                transform.localScale = new Vector3(48, 48, 48);//scale  50%
+                transform.localScale = new Vector3(52, 52, 52);//scale  50%
                 speed = 16.5f;
             }
 

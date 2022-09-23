@@ -5,9 +5,20 @@ using UnityEngine;
 public class MoveTrap_gai : MonoBehaviour
 {
     private float speed=2.3f;
-    [SerializeField] private Vector3[] positions;
+    private Vector3[] positions;
     private int index = 0;
+    private Vector3 from;
+    private Vector3 to;
+    void Start()
+    {
+        from =new Vector3(-4, transform.localPosition.y, transform.localPosition.z);
+        to = new Vector3(4, transform.localPosition.y, transform.localPosition.z);
+        positions[0] = from;
+        positions[1] = to;
+        Debug.Log(transform.position.y);
+        Debug.Log(transform.position.z);
 
+    }
 
     // Update is called once per frame
     void Update()

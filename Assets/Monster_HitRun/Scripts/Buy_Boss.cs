@@ -11,9 +11,10 @@ public class Buy_Boss : MonoBehaviour
     private float PropertiesBoss;
     [SerializeField] private Text usecoinstext;
     [SerializeField] private Text propertiestext;
- 
+    [SerializeField] private ParticleSystem up;
 
-    
+
+
     private void Start()
     {
         usecoinsBoss = 50;
@@ -34,6 +35,7 @@ public class Buy_Boss : MonoBehaviour
     }
     public void Buy()
     {
+        up.Play();
         Debug.Log("usebuyboss"+usecoinsBoss);
         if (CoinPicker.coinPicker.coins >= usecoinsBoss)
         {

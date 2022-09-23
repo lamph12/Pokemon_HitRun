@@ -2,21 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemies : MonoBehaviour
+public class creat_enemy : MonoBehaviour
 {
     public int lvenemies;
     public bool shotted;
     private Rigidbody rgEnemies;
     private Collider collider;
+    public int soluong;
+    private Vector3 vitribatdau;
+    public GameObject Chick;
 
-    
     private void Start()
     {
-
+        vitribatdau = transform.position;
         shotted = false;
         rgEnemies = GetComponent<Rigidbody>();
         collider = transform.gameObject.GetComponent<Collider>();
-
+        //Innit();
 
     }
 
@@ -42,7 +44,16 @@ public class Enemies : MonoBehaviour
         }
     }
 
-    
+   
+    //public void Innit()
+    //{
+    //    for(int i = 0; i < soluong; i++)
+    //    {
+    //        vitribatdau.z += 2.5f;
+    //        Instantiate(Chick, vitribatdau, Chick.transform.rotation);
+    //    }
+    //}
+
 
 
 }

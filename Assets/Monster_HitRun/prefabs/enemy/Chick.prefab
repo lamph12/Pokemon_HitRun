@@ -43,6 +43,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvenemies: 1
   shotted: 0
+  soluong: 5
 --- !u!1001 &4055093442499557437
 PrefabInstance:
   m_ObjectHideFlags: 0

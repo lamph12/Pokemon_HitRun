@@ -12,9 +12,10 @@ public class Buy_StartLv : MonoBehaviour
 
     public Text usecoinstext;
     public Text propertiestext;
-    
+    [SerializeField] private ParticleSystem up;
 
-    
+
+
     private void Start()
     {
         usecoins = 50;
@@ -38,7 +39,7 @@ public class Buy_StartLv : MonoBehaviour
         Debug.Log("usecoins" + usecoins);
         if (CoinPicker.coinPicker.coins >= usecoins)
         {
-            
+            up.Play();
             CoinPicker.coinPicker.coins -= usecoins;
             Properties ++;
             PlayerManager.PlayerManagerIstance.lvPlayer++;

@@ -11,6 +11,7 @@ public class Buy_offline : MonoBehaviour
     private int coinsupOffline;
     [SerializeField]private Text usecoinsOfflinetext;
     [SerializeField]private Text Propertiesofflinetext;
+    [SerializeField] private ParticleSystem up;
 
 
     
@@ -34,6 +35,7 @@ public class Buy_offline : MonoBehaviour
     {
         if (CoinPicker.coinPicker.coins >= usecoinsOffline)
         {
+            up.Play();
             CoinPicker.coinPicker.coins -= usecoinsOffline;
             Propertiesoffline+=5;
             coinsupOffline = 25;

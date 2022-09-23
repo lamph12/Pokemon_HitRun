@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class MoveTrap_gai : MonoBehaviour
 {
-    private float speed=2.3f;
-    private Vector3[] positions;
+    private float speed = 2.5f;
+    private Vector3[] positions = new Vector3[2];
     private int index = 0;
     private Vector3 from;
     private Vector3 to;
-    void Start()
-    {
+    void Awake()
+    {   
+
         from =new Vector3(-4, transform.localPosition.y, transform.localPosition.z);
         to = new Vector3(4, transform.localPosition.y, transform.localPosition.z);
         positions[0] = from;
         positions[1] = to;
-        Debug.Log(transform.position.y);
-        Debug.Log(transform.position.z);
 
     }
 

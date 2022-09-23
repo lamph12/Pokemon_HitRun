@@ -6,15 +6,27 @@ using UnityEngine.UI;
 public class MiniGame: MonoBehaviour
 {
     //private Transform transform;
-
+    private int Coins;
+    public Text CoinsEarned_txt;
     public GameObject x2_img;
     public GameObject x3_img;
     public GameObject x5_img;
     public Text xCoins_txt;
+    public Text xCoinsMini_txt;
+
+    private int CoinsX2;
+    private int CoinsX3;
+    private int CoinsX5;
 
     void Start()
-    {
+    {   
+
+        Coins = BonusEndgame.BonusEndgameInstance.CoinsEarned;
         transform.DOLocalMoveX(-227, 1.2f,false).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        CoinsEarned_txt.text = Coins.ToString();
+        CoinsX2 = Coins * 2;
+        CoinsX3 = Coins * 3;
+        CoinsX5 = Coins * 5;
         
     }
 
@@ -24,29 +36,30 @@ public class MiniGame: MonoBehaviour
 
         if ((transform.localPosition.x > 105 && transform.localPosition.x <=227)|| (transform.localPosition.x > -227 && transform.localPosition.x <= -105))
         {
-            Debug.Log("x222");
+            
             x2_img.SetActive(true);
             x3_img.SetActive(false);
             x5_img.SetActive(false);
             xCoins_txt.text = "x2";
+            xCoinsMini_txt.text = CoinsX2.ToString();
         }
         if((transform.localPosition.x > 29 && transform.localPosition.x <= 105)|| (transform.localPosition.x > -105 && transform.localPosition.x < -29))
         {
-            Debug.Log("x33");
+
             x2_img.SetActive(false);
             x3_img.SetActive(true);
             x5_img.SetActive(false);
             xCoins_txt.text = "x3";
-
+            xCoinsMini_txt.text = CoinsX3.ToString();
         }
         if (transform.localPosition.x >= -29 && transform.localPosition.x<= 29)
         {
-            Debug.Log("x55");
+
             x2_img.SetActive(false);
             x3_img.SetActive(false);
             x5_img.SetActive(true);
             xCoins_txt.text = "x5";
-
+            xCoinsMini_txt.text = CoinsX5.ToString();
         }
 
 

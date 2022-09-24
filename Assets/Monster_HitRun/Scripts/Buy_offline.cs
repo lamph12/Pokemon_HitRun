@@ -37,7 +37,8 @@ public class Buy_offline : MonoBehaviour
         {
             up.Play();
             CoinPicker.coinPicker.coins -= usecoinsOffline;
-            Propertiesoffline+=5;
+            PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
+            Propertiesoffline +=5;
             coinsupOffline = 25;
             usecoinsOffline += coinsupOffline;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnOff : MonoBehaviour
+public class OnOffSetting    : MonoBehaviour
 {
     [SerializeField] private GameObject onimage;
     [SerializeField]private GameObject offimage;

@@ -61,9 +61,17 @@ public class MiniGame: MonoBehaviour
             xCoins_txt.text = "x5";
             xCoinsMini_txt.text = CoinsX5.ToString();
         }
-
-
-
+    }
+    public void Coinsreceived()
+    {
+        CoinPicker.coinPicker.coins += Coins;
+        PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
+        StartCoroutine("wainttime");
+    }
+    IEnumerator wainttime()
+    {
+        yield return new WaitForSeconds(2);
+        MenuManager.MenuManagerIstance.Retry_btn();
     }
     public void KillTheAnimatioN()
     {

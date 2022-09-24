@@ -57,7 +57,7 @@ public class map : MonoBehaviour
     }
     public void road_1()
     {
-        vitribatdau.z = stackPool.Peek();
+        vitribatdau.z = stackPool.Peek(); 
         GameObject obj;
         vitribatdau.y = 0.15f;
         vitribatdau.x = -1.5f;

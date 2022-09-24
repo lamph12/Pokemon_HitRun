@@ -41,6 +41,7 @@ public class Buy_StartLv : MonoBehaviour
         {
             up.Play();
             CoinPicker.coinPicker.coins -= usecoins;
+            PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
             Properties ++;
             PlayerManager.PlayerManagerIstance.lvPlayer++;
             usecoins += coinsupStart;

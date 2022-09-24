@@ -8,13 +8,14 @@ public class CoinPicker : MonoBehaviour
 {
     public static CoinPicker coinPicker;
     public Text textcoins;
-    public int coins = 500;
+    public int coins =0;
     private void Awake()
     {
         coinPicker = this;
     }
     private void Start()
     {
+        coins = PlayerPrefs.GetInt("coins");
         //textcoins.text = "Coins :" + coins.ToString();3
              textcoins.text = coins.ToString() + " :";
     }
@@ -46,6 +47,7 @@ public class CoinPicker : MonoBehaviour
         if (other.CompareTag("coins"))
         {
             coins++;
+            PlayerPrefs.SetInt("coins", coins);
             Destroy(other.gameObject);
             //Debug.Log("coins" + coins);
             textcoins.text = coins.ToString() + " :";

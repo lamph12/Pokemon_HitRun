@@ -38,6 +38,7 @@ public class PlayerManager : MonoBehaviour
     private List<GameObject> listpoint = new List<GameObject>();
     private List<Vector3> listvector = new List<Vector3>();
 
+    
 
     public bool therotation = true;
     public bool thewall = false;
@@ -213,7 +214,7 @@ public class PlayerManager : MonoBehaviour
         {
             therotation = false;
             Cameractl.CameractlIstance.rotationcamera = true;
-            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + -4.2f, transform.position.y + 1.2f, transform.position.z), 50 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + -4.75f, transform.position.y + 1.2f, transform.position.z), 50 * Time.deltaTime);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, -35f), 50f * Time.deltaTime);
             rigidbody.isKinematic = true;
             thewall = true;
@@ -327,7 +328,6 @@ public class PlayerManager : MonoBehaviour
         {
             rigidbody.velocity = new Vector3(0, 11f, 0);
             speed =19;
-
             Debug.Log("aaaa");
             anim.SetBool("IsJump", true);
             anim.SetBool("IsRun", false);
@@ -337,6 +337,7 @@ public class PlayerManager : MonoBehaviour
         {
             Debug.Log("vao trap gai");
             Move = false;
+           
             //rigidbody.AddForce(new Vector3(0, 0, -1) * 500);
             rigidbody.isKinematic = true;
             collider.isTrigger = true;

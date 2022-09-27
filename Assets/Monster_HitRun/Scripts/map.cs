@@ -70,8 +70,8 @@ public class map : MonoBehaviour
     {
         vitribatdau.z = stackPool.Peek();
         GameObject obj;
-        vitribatdau.y = 0.22f;
-        vitribatdau.x = -2.6f;
+        vitribatdau.y = 0.29f;
+        vitribatdau.x = -1.88f;
         vitribatdau.z +=29.5f-7f;
         obj = Instantiate(road_2map, vitribatdau, road_2map.transform.rotation,Mapparent.transform);
         stackPool.Push(vitribatdau.z);

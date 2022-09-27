@@ -18,7 +18,7 @@ public class Finish : MonoBehaviour
             flagright.transform.rotation = Quaternion.Slerp(flagright.transform.rotation, Quaternion.Euler(0,0, 0), 10);
             other.gameObject.transform.position = new Vector3(0, other.transform.position.y, other.transform.position.z);
             PlayerManager.PlayerManagerIstance.thewall = true;
-
+            PlayerManager.PlayerManagerIstance.Win = true;
         }
     }
 }

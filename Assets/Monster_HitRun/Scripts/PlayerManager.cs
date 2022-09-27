@@ -38,8 +38,8 @@ public class PlayerManager : MonoBehaviour
     private List<GameObject> listpoint = new List<GameObject>();
     private List<Vector3> listvector = new List<Vector3>();
 
-    
 
+    public bool Win;
     public bool therotation = true;
     public bool thewall = false;
 

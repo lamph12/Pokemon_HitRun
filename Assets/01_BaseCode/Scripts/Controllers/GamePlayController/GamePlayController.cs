@@ -48,7 +48,7 @@ if (safeArea != null)
         {
             GameController.Instance.admobAds.DestroyBanner();
             GameController.Instance.admobAds.ShowBanner();
-            //isBannerShow = true;
+            isBannerShow = true;
         }
     }
 
@@ -59,22 +59,19 @@ if (safeArea != null)
             indexLevel = KeyPref.MAX_LEVEL;
         }
         //Skip null level [BuildTest]
-        if (CheckWin)
-        {
-            GameController.Instance.useProfile.CurrentLevelPlay++;
-
-            
-        }
-        //change current level here 
-       // PlayerManager
-         //GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel), gameScene.transform);
         
+        //change current level here 
+         GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel));
+        
+        if(CheckWin.Win=true)
         ////Load ra level theo Json
         if (Resources.Load<GameObject>("Levels/Level_" + indexLevel) != null)
         {
             //GamePlayController.Init();
             state = StateGame.Playing;
+            
         }
+        Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
     }
 
 
@@ -105,7 +102,7 @@ if (safeArea != null)
         else
         {
             GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
-            //Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
+            Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
         }
     }
     public void PlayAnimFly()

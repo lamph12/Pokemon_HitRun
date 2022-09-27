@@ -520,7 +520,7 @@ public class ConfigBuild
     [MenuItem("Open Scene/Game Play &2")]
     public static void OpenSceneGamePlay()
     {
-        string localPath = "Assets/01_BirdSort/Scenes/GamePlay.unity";
+        string localPath = "Assets/Monster_HitRun/Scripts/Scenes/SampleScene.unity";
         EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
         EditorSceneManager.OpenScene(localPath);
     }

@@ -17,6 +17,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public PlayerContain playerContain;
     public GameScene gameScene;
     public PlayerManager CheckWin;
+    public MenuManager menuManager;
 
 
     public StateGame state;
@@ -42,9 +43,11 @@ if (safeArea != null)
             safeArea.enabled = true;
 #endif
 
-        playerContain.Init();
+        //playerContain.Init(); 
+
         InitLevel(GameController.Instance.useProfile.CurrentLevelPlay);
-        gameScene.Init();
+        menuManager.Init();
+        //gameScene.Init();
         {
             GameController.Instance.admobAds.DestroyBanner();
             GameController.Instance.admobAds.ShowBanner();
@@ -59,11 +62,11 @@ if (safeArea != null)
             indexLevel = KeyPref.MAX_LEVEL;
         }
         //Skip null level [BuildTest]
-        
+
         //change current level here 
-         GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel));
-        
-        if(CheckWin.Win=true)
+        GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel));
+
+        if (CheckWin.Win=true)
         ////Load ra level theo Json
         if (Resources.Load<GameObject>("Levels/Level_" + indexLevel) != null)
         {

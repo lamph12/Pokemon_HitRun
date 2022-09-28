@@ -15,9 +15,8 @@ public class GameScene : BaseScene
 
     public void Init()
     {
-       
     }
-
+    
     public override void OnEscapeWhenStackBoxEmpty()
     {
        

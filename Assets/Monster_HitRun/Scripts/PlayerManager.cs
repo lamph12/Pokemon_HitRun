@@ -63,7 +63,7 @@ public class PlayerManager : MonoBehaviour
         transform.position = new Vector3((Mathf.Clamp(transform.position.x, distance - 4.2f, distance + 4.2f)), transform.position.y, transform.position.z);
         textlv.text = "Lv " + lvPlayer.ToString();
 
-        if (MenuManager.MenuManagerIstance.GameStace && Move)
+        if (GamePlayController.Instance.menuManager.GameStace && Move)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.MoveTowards(transform.position.z, 1000, speed * Time.deltaTime));
             MovePlayer();
@@ -164,14 +164,14 @@ public class PlayerManager : MonoBehaviour
         if (transform.position.y < -0.3f)
         {
             gameObject.SetActive(false);
-            MenuManager.MenuManagerIstance.GameStace = false;
-            MenuManager.MenuManagerIstance.BonusEndgame.gameObject.SetActive(true);
+            GamePlayController.Instance.menuManager.GameStace = false;
+            GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
         if (lvPlayer <= 0)
         {
             gameObject.SetActive(false);
-            MenuManager.MenuManagerIstance.GameStace = false;
-            MenuManager.MenuManagerIstance.BonusEndgame.gameObject.SetActive(true);
+            GamePlayController.Instance.menuManager.GameStace = false;
+            GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
 
     }

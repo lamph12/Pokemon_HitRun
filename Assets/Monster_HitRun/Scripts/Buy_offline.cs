@@ -15,14 +15,14 @@ public class Buy_offline : MonoBehaviour
 
 
     
-    private void Start()
+    public void Init()
     {
         coinsupOffline = 50;
         Propertiesoffline = 5;
         //coinsupOffline = PlayerPrefs.GetInt("coinsupOffline");
         //usecoinsOffline = PlayerPrefs.GetInt("usecoinsOffline");
         //Propertiesoffline = PlayerPrefs.GetInt("Propertiesoffline");
- 
+
     }
     private void Update()
     {

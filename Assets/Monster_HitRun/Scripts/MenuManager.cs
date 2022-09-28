@@ -3,22 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public static MenuManager MenuManagerIstance;
-
     public bool GameStace;
     public GameObject menuElement;
     public GameObject YouLose;
     public GameObject Again;
     public GameObject BonusEndgame;
+    public Buy_Boss buy_Boss;
+    public Buy_offline buy_Offline;
+    public Buy_StartLv buy_StartLv;
+    public Button playBtn;
     Ray ray;
     RaycastHit hit;
-    void Start()
+    public void Init()
     {
-        MenuManagerIstance = this;
+        playBtn.onClick.AddListener(StartGame);
         GameStace = false;
+        buy_StartLv.Init();
+        buy_Offline.Init();
+        buy_Boss.Init();
     }
 
     // Update is called once per frame

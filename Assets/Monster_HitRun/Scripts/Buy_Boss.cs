@@ -15,7 +15,7 @@ public class Buy_Boss : MonoBehaviour
 
 
 
-    private void Start()
+    public void Init()
     {
         usecoinsBoss = 50;
         PropertiesBoss = 0.5f;

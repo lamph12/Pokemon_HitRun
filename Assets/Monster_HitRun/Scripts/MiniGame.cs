@@ -71,7 +71,7 @@ public class MiniGame: MonoBehaviour
     IEnumerator wainttime()
     {
         yield return new WaitForSeconds(2);
-        MenuManager.MenuManagerIstance.Retry_btn();
+        GamePlayController.Instance.menuManager.Retry_btn();
     }
     public void KillTheAnimatioN()
     {

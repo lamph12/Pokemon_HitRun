@@ -38,8 +38,8 @@ public class creat_enemy : MonoBehaviour
             if (PlayerManager.PlayerManagerIstance.lvPlayer < lvenemies)
             {
                 other.gameObject.SetActive(false);
-                MenuManager.MenuManagerIstance.GameStace = false;
-                MenuManager.MenuManagerIstance.BonusEndgame.gameObject.SetActive(true);
+                GamePlayController.Instance.menuManager.GameStace = false;
+                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
             }
         }
     }

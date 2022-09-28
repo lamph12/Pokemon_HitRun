@@ -29,7 +29,7 @@ public class Cameractl : MonoBehaviour
     {
         if (rotationcamera == false)
         {
-            if(!flash&& MenuManager.MenuManagerIstance.GameStace)
+            if(!flash && GamePlayController.Instance.menuManager.GameStace)
                 Move_Player();
             if (flash)
                 Camerain();

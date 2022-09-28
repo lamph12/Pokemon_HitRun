@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public bool GameStace;
+    public bool GameStace =false;
     public GameObject menuElement;
     public GameObject YouLose;
     public GameObject Again;
@@ -15,16 +15,16 @@ public class MenuManager : MonoBehaviour
     public Buy_Boss buy_Boss;
     public Buy_offline buy_Offline;
     public Buy_StartLv buy_StartLv;
-    public Button playBtn;
+    
     Ray ray;
     RaycastHit hit;
     public void Init()
     {
-        playBtn.onClick.AddListener(StartGame);
         GameStace = false;
         buy_StartLv.Init();
         buy_Offline.Init();
         buy_Boss.Init();
+        Debug.Log("da vao init");
     }
 
     // Update is called once per frame

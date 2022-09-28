@@ -37,9 +37,8 @@ public class map : MonoBehaviour
     public void taomap()
     {
         Debug.Log(stackPool.Count);
-        if(Mapparent.transform.childCount==0)
-            stackPool.Push(-84);
-        if (stackPool.Count <= 0)
+        
+        if (stackPool.Count == 0)
         {
             stackPool.Push(-84);
         }
@@ -59,7 +58,7 @@ public class map : MonoBehaviour
     {
         vitribatdau.z = stackPool.Peek(); 
         GameObject obj;
-        vitribatdau.y = 0.15f;
+        vitribatdau.y = 0.33f;
         vitribatdau.x = -1.5f;
         obj = Instantiate(road_1map, vitribatdau, road_1map.transform.rotation,Mapparent.transform);
         vitribatdau.z += 22.5f;
@@ -70,7 +69,7 @@ public class map : MonoBehaviour
     {
         vitribatdau.z = stackPool.Peek();
         GameObject obj;
-        vitribatdau.y = 0.29f;
+        vitribatdau.y = 0.35f;
         vitribatdau.x = -1.88f;
         vitribatdau.z +=29.5f-7f;
         obj = Instantiate(road_2map, vitribatdau, road_2map.transform.rotation,Mapparent.transform);
@@ -127,7 +126,7 @@ public class map : MonoBehaviour
     {
         for (int i = 0; i < soluong; i++)
         {
-            vitribatdau.y = 0;
+            vitribatdau.y = 2;
             GameObject obj;
             obj = Instantiate(Coins, vitribatdau, Coins.transform.rotation, Coins_Parent.transform);
             vitribatdau.z += khoangcach;

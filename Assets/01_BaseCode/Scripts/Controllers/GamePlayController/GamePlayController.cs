@@ -31,7 +31,7 @@ public class GamePlayController : Singleton<GamePlayController>
 
     protected override void OnAwake()
     {
-        GameController.Instance.currentScene = SceneType.GamePlay;
+        //GameController.Instance.currentScene = SceneType.GamePlay;
 
         Init();
     }
@@ -46,6 +46,7 @@ if (safeArea != null)
         //playerContain.Init(); 
 
         InitLevel(GameController.Instance.useProfile.CurrentLevelPlay);
+        Debug.Log("da vao init");
         menuManager.Init();
         //gameScene.Init();
         {

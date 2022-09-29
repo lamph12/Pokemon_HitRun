@@ -205,7 +205,7 @@ public class PlayerManager : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.MoveTowards(transform.position.z, 1000, speed * Time.deltaTime));
             Cameractl.CameractlIstance.rotationcamera = true;
             Cameractl.CameractlIstance.right = true;
-            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 4.2f, transform.position.y + 1.2f, transform.position.z), 50 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 4.2f, transform.position.y + 2f, transform.position.z), 50 * Time.deltaTime);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, 35f), 50f * Time.deltaTime);
             rigidbody.isKinematic = true;
             thewall = true;
@@ -215,7 +215,7 @@ public class PlayerManager : MonoBehaviour
         {
             therotation = false;
             Cameractl.CameractlIstance.rotationcamera = true;
-            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + -4.75f, transform.position.y + 1.2f, transform.position.z), 50 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + -4.75f, transform.position.y + 2f, transform.position.z), 50 * Time.deltaTime);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, 0f, -35f), 50f * Time.deltaTime);
             rigidbody.isKinematic = true;
             thewall = true;

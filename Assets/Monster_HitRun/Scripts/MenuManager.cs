@@ -24,7 +24,7 @@ public class MenuManager : MonoBehaviour
         buy_StartLv.Init();
         buy_Offline.Init();
         buy_Boss.Init();
-        Debug.Log("da vao init");
+
     }
 
     // Update is called once per frame

@@ -89,7 +89,6 @@ if (safeArea != null)
             indexLevel = KeyPref.MAX_LEVEL;
         }
         //Skip null level [BuildTest]
-
         //change current level here 
         GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel));
         Debug.Log(GameController.Instance.useProfile.CurrentLevelPlay);
@@ -142,7 +141,8 @@ if (safeArea != null)
             {
                 GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
                 Debug.Log(GameController.Instance.useProfile.CurrentLevelPlay);
-                Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
+                
+                //Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
 
             }
         }

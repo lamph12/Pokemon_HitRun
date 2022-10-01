@@ -38,13 +38,13 @@ public class map : MonoBehaviour
     {
         Debug.Log(stackPool.Count);
         
-        if (stackPool.Count == 0)
-        {
-            stackPool.Push(-84);
-        }
+        //if (stackPool.Count == 0)
+        //{
+        //    stackPool.Push(-84);
+        //}
         Debug.Log(vitribatdau.z);
         for(int i = 0; i < soluong; i++)
-        {
+        {   //if(stackPool!=null)
             vitribatdau.z= stackPool.Peek();
             GameObject obj;
             vitribatdau.y = 0;

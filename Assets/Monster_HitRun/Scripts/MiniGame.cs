@@ -70,8 +70,10 @@ public class MiniGame: MonoBehaviour
     }
     IEnumerator wainttime()
     {
-        yield return new WaitForSeconds(2);
-        GamePlayController.Instance.menuManager.Retry_btn();
+        yield return new WaitForSeconds(1);
+        //GamePlayController.Instance.menuManager.Retry_btn();
+        Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
+       
     }
     public void KillTheAnimatioN()
     {

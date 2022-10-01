@@ -69,7 +69,7 @@ public class PlayerManager : MonoBehaviour
 
         if (GamePlayController.Instance.menuManager.GameStace && Move)
         {
-            Debug.Log(GamePlayController.Instance.menuManager.GameStace);
+            //Debug.Log(GamePlayController.Instance.menuManager.GameStace);
             transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.MoveTowards(transform.position.z, 1000, speed * Time.deltaTime));
             MovePlayer();
         }

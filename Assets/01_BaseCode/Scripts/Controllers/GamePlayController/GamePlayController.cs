@@ -16,8 +16,8 @@ public class GamePlayController : Singleton<GamePlayController>
     private static bool isBannerShow;
     public PlayerContain playerContain;
     public GameScene gameScene;
-    public PlayerManager CheckWin;
     public MenuManager menuManager;
+    public PlayerManager Player;
 
 
     public StateGame state;
@@ -68,10 +68,12 @@ if (safeArea != null)
 #endif
 
         //playerContain.Init(); 
-
+        menuManager.Init();
+        Player.Init();
+        Debug.Log(GameController.Instance.useProfile.CurrentLevelPlay);
         InitLevel(GameController.Instance.useProfile.CurrentLevelPlay);
         Debug.Log("da vao init");
-        menuManager.Init();
+        
         //gameScene.Init();
         {
             GameController.Instance.admobAds.DestroyBanner();
@@ -90,8 +92,11 @@ if (safeArea != null)
 
         //change current level here 
         GameObject level = Instantiate(Resources.Load<GameObject>("Levels/Level_" + indexLevel));
-
-        if (CheckWin.Win=true)
+        Debug.Log(GameController.Instance.useProfile.CurrentLevelPlay);
+        //{
+        //    Debug.Log("da WIn");
+        //    
+        //}
         ////Load ra level theo Json
         if (Resources.Load<GameObject>("Levels/Level_" + indexLevel) != null)
         {
@@ -119,18 +124,27 @@ if (safeArea != null)
 
     public void NextLevel()
     {
-        var currentLevel = GameController.Instance.useProfile.CurrentLevelPlay;
-        currentLevel += 1;
-        if (currentLevel >= KeyPref.MAX_LEVEL)
+        if (Player.Win == true)
         {
-            currentLevel = KeyPref.MAX_LEVEL;
-            GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
 
-        }
-        else
-        {
-            GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
-            Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
+            //GameController.Instance.useProfile.CurrentLevelPlay++;
+            Debug.Log("da WIn");
+
+            var currentLevel = GameController.Instance.useProfile.CurrentLevelPlay;
+            currentLevel += 1;
+            if (currentLevel >= KeyPref.MAX_LEVEL)
+            {
+                currentLevel = KeyPref.MAX_LEVEL;
+                GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
+
+            }
+            else
+            {
+                GameController.Instance.useProfile.CurrentLevelPlay = currentLevel;
+                Debug.Log(GameController.Instance.useProfile.CurrentLevelPlay);
+                Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
+
+            }
         }
     }
     public void PlayAnimFly()

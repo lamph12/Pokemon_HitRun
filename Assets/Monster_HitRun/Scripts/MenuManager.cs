@@ -15,13 +15,14 @@ public class MenuManager : MonoBehaviour
     public Buy_Boss buy_Boss;
     public Buy_offline buy_Offline;
     public Buy_StartLv buy_StartLv;
+    public PlayerManager Player;
     
     Ray ray;
     RaycastHit hit;
     public void Init()
     {
         GameStace = false;
-        buy_StartLv.Init();
+        //buy_StartLv.Init();
         buy_Offline.Init();
         buy_Boss.Init();
 
@@ -48,7 +49,8 @@ public class MenuManager : MonoBehaviour
     }
     public void Retry_btn()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        GameController.Instance.LoadScene(SceneName.LOADING_SCENE);
         Debug.Log("Active Scene : " + SceneManager.GetActiveScene().name);
     }
 

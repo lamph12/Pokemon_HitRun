@@ -19,6 +19,7 @@ public class Finish : MonoBehaviour
             other.gameObject.transform.position = new Vector3(0, other.transform.position.y, other.transform.position.z);
             PlayerManager.PlayerManagerIstance.thewall = true;
             PlayerManager.PlayerManagerIstance.Win = true;
+            GamePlayController.Instance.NextLevel();
         }
     }
 }

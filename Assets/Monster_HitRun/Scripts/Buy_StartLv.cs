@@ -13,10 +13,11 @@ public class Buy_StartLv : MonoBehaviour
     public Text usecoinstext;
     public Text propertiestext;
     [SerializeField] private ParticleSystem up;
+    public PlayerManager Player;
 
 
 
-    public void Init()
+    public void Start()
     {
         usecoins = 50;
         coinsupStart = 10;

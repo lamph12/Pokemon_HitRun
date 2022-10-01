@@ -12,6 +12,8 @@ public class PlayerManager : MonoBehaviour
     private Vector3 player;
     public bool InRun = false;
 
+    //public MenuManager menuManager;
+
     public int lvPlayer;
     public Text textlv;
 
@@ -51,8 +53,10 @@ public class PlayerManager : MonoBehaviour
         PlayerManagerIstance = this;
 
     }
-    private void Start()
+    public void Init()
     {
+        //menuManager.Init();
+        Win = false;
         therotation = true;
         localtrans = GetComponent<Transform>();
         textlv.text = "Lv " + lvPlayer.ToString();

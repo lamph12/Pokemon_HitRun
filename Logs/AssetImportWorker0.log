@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1618; Version 2009; 64bit' Language: 'en' Physical Memory: 16237 MB
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'en' Physical Memory: 16197 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,69 +11,61 @@ C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/ProjectBaseMaxAppflyerAPI31/ProjectBaseMaxAppflyerAPI31
+D:/Pokemon_HitRun
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60337
-Successfully changed project path to: D:/ProjectBaseMaxAppflyerAPI31/ProjectBaseMaxAppflyerAPI31
-D:/ProjectBaseMaxAppflyerAPI31/ProjectBaseMaxAppflyerAPI31
+50647
+Successfully changed project path to: D:/Pokemon_HitRun
+D:/Pokemon_HitRun
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 160.08 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 161.70 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/ProjectBaseMaxAppflyerAPI31/ProjectBaseMaxAppflyerAPI31/Assets
+[Subsystems] Discovering subsystems at path D:/Pokemon_HitRun/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
     Vendor:   
-    VRAM:     2018 MB
-    Driver:   23.21.13.8831
+    VRAM:     8098 MB
+    Driver:   31.0.101.2111
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
-Registered in 0.002159 seconds.
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
+Registered in 0.001672 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 144.69 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 160.44 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.405 seconds
+- Completed reload, in  1.799 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2405ms)
-		BeginReloadAssembly (44ms)
+	ReloadAssembly (1799ms)
+		BeginReloadAssembly (43ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (487ms)
-			LoadAssemblies (43ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (166ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (259ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (266ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (145ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (71ms)
+				RefreshPlugins (160ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (73ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -81,7 +73,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012473 seconds.
+Registered in 0.013664 seconds.
 Begin MonoManager ReloadAssembly
 Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 
@@ -95,1011 +87,49 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 
 Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
 
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 165.50 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 147.92 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.290 seconds
+- Completed reload, in  2.215 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2291ms)
-		BeginReloadAssembly (130ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (2099ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1317ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (166ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (872ms)
-				ProcessInitializeOnLoadMethodAttributes (145ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.50 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4673 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.7 MB.
-System memory in use after: 182.7 MB.
-
-Unloading 232 unused Assets to reduce memory usage. Loaded Objects now: 5016.
-Total: 27.821500 ms (FindLiveObjects: 0.743600 ms CreateObjectMapping: 0.440300 ms MarkObjects: 25.740100 ms  DeleteObjects: 0.894700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Monster_HitRun/prefabs/boss
-  artifactKey: Guid(69addb2dc9c02b844b3810bb3b2ef17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss using Guid(69addb2dc9c02b844b3810bb3b2ef17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fed30d0b521fbb374045801724d40d') in 0.006042 seconds 
-  Import took 0.014379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.999602 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon
-  artifactKey: Guid(63b8242cdd235114ab58bf619c45cd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon using Guid(63b8242cdd235114ab58bf619c45cd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b17e5c1fdf14c3df1face50d4b109f') in 0.001350 seconds 
-  Import took 0.009593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.553997 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon
-  artifactKey: Guid(877e1f7cf4f37154ba9798182b7ebf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon using Guid(877e1f7cf4f37154ba9798182b7ebf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb47ceab24f3eb349ca8fe26498b0e20') in 0.001546 seconds 
-  Import took 0.009638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.086657 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/model.fbx
-  artifactKey: Guid(0da2d8b7ba97d2c498a1ca7878ebb613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/model.fbx using Guid(0da2d8b7ba97d2c498a1ca7878ebb613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45ba37253ded96298c3e087a967fd49') in 0.114932 seconds 
-  Import took 0.122702 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.407875 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures
-  artifactKey: Guid(1b6713a4837e9234d83ec5692bf4041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures using Guid(1b6713a4837e9234d83ec5692bf4041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035db615c7caa74c2bd932c899c4eba0') in 0.001252 seconds 
-  Import took 0.010212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.106964 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Base_shadow.png
-  artifactKey: Guid(31a70c8a152185540b1d6b43947a4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Base_shadow.png using Guid(31a70c8a152185540b1d6b43947a4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da01c2e9df216059f77116a1bd36cbce') in 0.028983 seconds 
-  Import took 0.036671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Normal.png
-  artifactKey: Guid(cc09bfa06f94eba49ac6becf73e10997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Normal.png using Guid(cc09bfa06f94eba49ac6becf73e10997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edac371706f227063f4398b3d00461d2') in 0.079983 seconds 
-  Import took 0.097737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Ambient_Occlusion.png
-  artifactKey: Guid(283e410dde13afc47a459ea21d11d92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Ambient_Occlusion.png using Guid(283e410dde13afc47a459ea21d11d92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dc34f0e7e93825e1119d5ea8d3ab63') in 0.083493 seconds 
-  Import took 0.091698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Specular.png
-  artifactKey: Guid(a538873d008319e49a4be2ca46047d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Specular.png using Guid(a538873d008319e49a4be2ca46047d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da12372c71624fad9373e3776ab8be8') in 0.044389 seconds 
-  Import took 0.052689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Glossiness.png
-  artifactKey: Guid(09c2fd9ce9649e34287efe9e2fa64473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Glossiness.png using Guid(09c2fd9ce9649e34287efe9e2fa64473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe12dfa321bfcb38eeba9b60336ffa01') in 0.047722 seconds 
-  Import took 0.054812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Diffuse.png
-  artifactKey: Guid(b004032c02dc9cb4a933e88b409d10e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Diffuse.png using Guid(b004032c02dc9cb4a933e88b409d10e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedc1fb5f2f2c833366e3ab5dc517583') in 0.046205 seconds 
-  Import took 0.054811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.479485 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Base_shadow.png
-  artifactKey: Guid(31a70c8a152185540b1d6b43947a4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Base_shadow.png using Guid(31a70c8a152185540b1d6b43947a4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a349e34433cc8735228dec7b2dad737e') in 0.048764 seconds 
-  Import took 0.058088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Normal.png
-  artifactKey: Guid(cc09bfa06f94eba49ac6becf73e10997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Normal.png using Guid(cc09bfa06f94eba49ac6becf73e10997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc43299bff618c0606c6b2c924c9bcb7') in 0.055713 seconds 
-  Import took 0.062930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Ambient_Occlusion.png
-  artifactKey: Guid(283e410dde13afc47a459ea21d11d92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Ambient_Occlusion.png using Guid(283e410dde13afc47a459ea21d11d92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e66a4610d91ed4d329f79d8e04f551') in 0.056634 seconds 
-  Import took 0.064104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Specular.png
-  artifactKey: Guid(a538873d008319e49a4be2ca46047d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Specular.png using Guid(a538873d008319e49a4be2ca46047d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de48a1ecf2172e8077936c8657e11989') in 0.050219 seconds 
-  Import took 0.057621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Glossiness.png
-  artifactKey: Guid(09c2fd9ce9649e34287efe9e2fa64473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Glossiness.png using Guid(09c2fd9ce9649e34287efe9e2fa64473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302fd10daafc2c497478b7a4d1f61fa2') in 0.048333 seconds 
-  Import took 0.055515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Diffuse.png
-  artifactKey: Guid(b004032c02dc9cb4a933e88b409d10e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/geodude-pokemon/geodude-pokemon/textures/Geodude_4_Pokemon_Diffuse.png using Guid(b004032c02dc9cb4a933e88b409d10e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0fb11a0d28258bfd4b6d56921d01b3') in 0.048599 seconds 
-  Import took 0.055698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.036837 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon
-  artifactKey: Guid(d8eedbe5634d0f843be4fbbccaec93d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon using Guid(d8eedbe5634d0f843be4fbbccaec93d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf0f797bf3b67ebda83eebe24995aab') in 0.001215 seconds 
-  Import took 0.009459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.783936 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon
-  artifactKey: Guid(760525bec22d7c545b542321422dad71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon using Guid(760525bec22d7c545b542321422dad71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c57c0056f59bea0acdc9c8a3717b02') in 0.001181 seconds 
-  Import took 0.009840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.250924 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source
-  artifactKey: Guid(301ba0e97c5b9734fb0572d26b51a2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source using Guid(301ba0e97c5b9734fb0572d26b51a2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11fcde1bd0641fe0b253a1b7b3ae1527') in 0.001502 seconds 
-  Import took 0.009604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.766439 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1
-  artifactKey: Guid(34df37faac3ea8e4e97d679b9acce0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1 using Guid(34df37faac3ea8e4e97d679b9acce0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9288dc7e1fa7537eaa3b15aff18a22a5') in 0.001148 seconds 
-  Import took 0.009587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.084804 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/gengar v1.obj
-  artifactKey: Guid(15a13c3a82d1ee341bd7e8a1a5090e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/gengar v1.obj using Guid(15a13c3a82d1ee341bd7e8a1a5090e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76ca44e1d0c6be175e6f319c1a0e96d') in 0.035704 seconds 
-  Import took 0.043543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/Gengar_face.png
-  artifactKey: Guid(ecff5e794b4a3a84c8a11126bec45f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/Gengar_face.png using Guid(ecff5e794b4a3a84c8a11126bec45f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7c95b0e765c451d8372c68ac30e2bb') in 0.025510 seconds 
-  Import took 0.032947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/gengar.fbx
-  artifactKey: Guid(67719b58705ce654cba0df28d38baddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/source/gengar v1/gengar.fbx using Guid(67719b58705ce654cba0df28d38baddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e50c3832451a426be63f23fe314a28b') in 0.047037 seconds 
-  Import took 0.055318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.077134 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/textures
-  artifactKey: Guid(821b2bcb69e225b4893762ac32d21a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/textures using Guid(821b2bcb69e225b4893762ac32d21a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d67fa9b2da1770ef25ca7746e70e57') in 0.001504 seconds 
-  Import took 0.009975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.086650 seconds.
-  path: Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/textures/Gengar_face.png
-  artifactKey: Guid(853dbb53b5d9c9842a9c12acdb205e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/prefabs/boss/gengar-pokemon/gengar-pokemon/textures/Gengar_face.png using Guid(853dbb53b5d9c9842a9c12acdb205e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49801ad0775c5b07bbf4df871d79f8aa') in 0.010579 seconds 
-  Import took 0.018348 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011748 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 3.95 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.106 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2107ms)
-		BeginReloadAssembly (130ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1913ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (1070ms)
-				ProcessInitializeOnLoadMethodAttributes (72ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.68 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.3 MB.
-System memory in use after: 181.4 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5067.
-Total: 34.245300 ms (FindLiveObjects: 0.887300 ms CreateObjectMapping: 0.426800 ms MarkObjects: 31.848400 ms  DeleteObjects: 1.080100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012264 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.41 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.922 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1922ms)
-		BeginReloadAssembly (118ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1752ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (353ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1143ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (965ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.73 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.4 MB.
-System memory in use after: 181.5 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5069.
-Total: 29.406300 ms (FindLiveObjects: 0.463100 ms CreateObjectMapping: 0.186600 ms MarkObjects: 27.429700 ms  DeleteObjects: 1.325000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011657 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.47 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.111 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2111ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1933ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (358ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1290ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (1116ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.49 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.6 MB.
-System memory in use after: 181.7 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5071.
-Total: 32.092900 ms (FindLiveObjects: 0.466000 ms CreateObjectMapping: 0.207200 ms MarkObjects: 30.165700 ms  DeleteObjects: 1.252200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011504 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.55 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.156 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2156ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1972ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (356ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1307ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (102ms)
-				ProcessInitializeOnLoadAttributes (1127ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.54 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.6 MB.
-System memory in use after: 181.8 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5073.
-Total: 29.356800 ms (FindLiveObjects: 0.695400 ms CreateObjectMapping: 0.335800 ms MarkObjects: 27.188500 ms  DeleteObjects: 1.135400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011758 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.39 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.099 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2100ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1935ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (355ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1288ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (1113ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.60 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.6 MB.
-System memory in use after: 181.8 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5075.
-Total: 30.801900 ms (FindLiveObjects: 0.456000 ms CreateObjectMapping: 0.200900 ms MarkObjects: 29.073600 ms  DeleteObjects: 1.069800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1027.662821 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/ball.prefab
-  artifactKey: Guid(6d94ac966cebf014c8b136697059a74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/ball.prefab using Guid(6d94ac966cebf014c8b136697059a74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be613cb676fc8f544f41c63f5e6d457') in 0.064206 seconds 
-  Import took 0.072219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw@Jump.fbx
-  artifactKey: Guid(f414ce4dfb8abcb458498142aab4a581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw@Jump.fbx using Guid(f414ce4dfb8abcb458498142aab4a581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c77957f5b87ad3224205e5afab2f0d8') in 0.192400 seconds 
-  Import took 0.200437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Dragon Spark.prefab
-  artifactKey: Guid(101fa67282661244aaef261f8b3cd313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Dragon Spark.prefab using Guid(101fa67282661244aaef261f8b3cd313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c13703854028468f5a6231fdcd59125') in 0.241987 seconds 
-  Import took 0.251255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/f.prefab
-  artifactKey: Guid(7ca8647dbe2552744bb96aa6f8741cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/f.prefab using Guid(7ca8647dbe2552744bb96aa6f8741cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e4469591d97777341d5e3315ee977b') in 0.315237 seconds 
-  Import took 0.325328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Lo_xo (1).prefab
-  artifactKey: Guid(8641f1c94926cca42a8c65aac84dc879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Lo_xo (1).prefab using Guid(8641f1c94926cca42a8c65aac84dc879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10a91daa75eb3cda753e00318b0f633') in 0.054001 seconds 
-  Import took 0.062622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/pCube34 (1).prefab
-  artifactKey: Guid(797dbab26c70d9d4bbee1f5a9c48d14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/pCube34 (1).prefab using Guid(797dbab26c70d9d4bbee1f5a9c48d14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8323f4a6319017e0693e11ed3583be61') in 0.052482 seconds 
-  Import took 0.060993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Lo_xo (1) 1.prefab
-  artifactKey: Guid(3036e632823eeb44ebd515acb3852680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Lo_xo (1) 1.prefab using Guid(3036e632823eeb44ebd515acb3852680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fdb5fd8aad51c56d7efe39120617f1') in 0.005573 seconds 
-  Import took 0.014071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/pCube30 (1).prefab
-  artifactKey: Guid(294c1b54052576346afddc9b1aa03f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/pCube30 (1).prefab using Guid(294c1b54052576346afddc9b1aa03f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf380759e031fc3dd52eab5ddb6b934') in 0.057909 seconds 
-  Import took 0.066254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bee.prefab
-  artifactKey: Guid(bda01568d652d40458a5234c6410c4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bee.prefab using Guid(bda01568d652d40458a5234c6410c4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c800976799ac3ceb0042c62f5a59f8') in 0.109321 seconds 
-  Import took 0.119101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bat.prefab
-  artifactKey: Guid(6bf626df09c1c8f4eb6d51773b3112c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bat.prefab using Guid(6bf626df09c1c8f4eb6d51773b3112c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ebcca3b526fd828245393544c665e0') in 0.039425 seconds 
-  Import took 0.047317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Chick.prefab
-  artifactKey: Guid(ab02178ff66919d49ab91c371b2068cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Chick.prefab using Guid(ab02178ff66919d49ab91c371b2068cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bb40aa7acdda1b80f8883b53d871e3') in 0.011259 seconds 
-  Import took 0.019598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bat.prefab
-  artifactKey: Guid(6bf626df09c1c8f4eb6d51773b3112c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Bat.prefab using Guid(6bf626df09c1c8f4eb6d51773b3112c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ebcca3b526fd828245393544c665e0') in 0.011059 seconds 
-  Import took 0.019091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/build.fbx
-  artifactKey: Guid(fc5c68408f3b087459c644e9f3a7a3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/build.fbx using Guid(fc5c68408f3b087459c644e9f3a7a3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afac2624172a1769a0ddf189050cbfe') in 0.279138 seconds 
-  Import took 0.288301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Boy_run.prefab
-  artifactKey: Guid(26f658c7eb606cd4895bedbd0df8d280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Boy_run.prefab using Guid(26f658c7eb606cd4895bedbd0df8d280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a053e7b90d00aad86f0c59e378b7257') in 0.005224 seconds 
-  Import took 0.015278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/lambert1_Base_Color.png
-  artifactKey: Guid(4a7868f1701a2764e8044bc675cd1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/lambert1_Base_Color.png using Guid(4a7868f1701a2764e8044bc675cd1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac537eb5f2405105e6cb716e390a3801') in 0.072471 seconds 
-  Import took 0.080741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Dragon Spark 1.prefab
-  artifactKey: Guid(78c0962530c301940906c4aaa72de1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Dragon Spark 1.prefab using Guid(78c0962530c301940906c4aaa72de1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb63b7fdeaeb32a3b5fc0d982950331d') in 0.083314 seconds 
-  Import took 0.093486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Idle.fbx
-  artifactKey: Guid(1fb40f8a07ae54b4bae1beee2bd2afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Idle.fbx using Guid(1fb40f8a07ae54b4bae1beee2bd2afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee5230a20815ab12110db689299fb57') in 0.014026 seconds 
-  Import took 0.022846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw.fbx
-  artifactKey: Guid(e4685ae0987061b4d851b7ce0f89948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw.fbx using Guid(e4685ae0987061b4d851b7ce0f89948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9d6891b9ff1b716819495c397c19b5') in 0.122564 seconds 
-  Import took 0.133194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Idle.fbx
-  artifactKey: Guid(1fb40f8a07ae54b4bae1beee2bd2afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/Idle.fbx using Guid(1fb40f8a07ae54b4bae1beee2bd2afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee5230a20815ab12110db689299fb57') in 0.010354 seconds 
-  Import took 0.021394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw.fbx
-  artifactKey: Guid(e4685ae0987061b4d851b7ce0f89948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Materials/Materials/Resources/Prefab/boy_throw.fbx using Guid(e4685ae0987061b4d851b7ce0f89948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9d6891b9ff1b716819495c397c19b5') in 0.115761 seconds 
-  Import took 0.124694 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011942 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.40 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.218 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2219ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (2031ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (365ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (1358ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (1137ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.56 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.9 MB.
-System memory in use after: 182.1 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5079.
-Total: 30.176600 ms (FindLiveObjects: 0.483400 ms CreateObjectMapping: 0.216600 ms MarkObjects: 28.070000 ms  DeleteObjects: 1.405100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012245 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.73 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.084 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2085ms)
+	ReloadAssembly (2216ms)
 		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1916ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (2047ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (362ms)
+			SetupTypeCache (369ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (1242ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (1331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (1063ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.98 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.8 MB.
-System memory in use after: 181.9 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5081.
-Total: 31.573100 ms (FindLiveObjects: 0.664400 ms CreateObjectMapping: 0.512500 ms MarkObjects: 29.227600 ms  DeleteObjects: 1.166600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011276 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.49 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.100 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2100ms)
-		BeginReloadAssembly (115ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1933ms)
-			LoadAssemblies (104ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (422ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1195ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (1026ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (980ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
 				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 4.88 ms, found 7 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 17.37 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.9 MB.
-System memory in use after: 181.9 MB.
+Unloading 4673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.2 MB.
+System memory in use after: 182.3 MB.
 
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5083.
-Total: 35.590000 ms (FindLiveObjects: 0.658200 ms CreateObjectMapping: 0.386100 ms MarkObjects: 32.914100 ms  DeleteObjects: 1.628900 ms)
+Unloading 232 unused Assets to reduce memory usage. Loaded Objects now: 5014.
+Total: 42.263000 ms (FindLiveObjects: 0.689800 ms CreateObjectMapping: 0.400400 ms MarkObjects: 39.947300 ms  DeleteObjects: 1.223000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1109,526 +139,108 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011964 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.59 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unable to write to 'ProjectSettings\GvhProjectSettings.xml' (System.IO.IOException: Sharing violation on path D:\ProjectBaseMaxAppflyerAPI31\ProjectBaseMaxAppflyerAPI31\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean useAsync) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,bool)
-  at System.Xml.XmlWriterSettings.CreateWriter (System.String outputFileName) [0x00051] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlWriter.Create (System.String outputFileName, System.Xml.XmlWriterSettings settings) [0x0000a] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at Google.ProjectSettings.Save () [0x000a1] in Z:\tmp\tmp.MI6gIp8Q3C\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:828 , Project settings were not saved!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-Google.Logger:Log (string,Google.LogLevel) (at Z:/tmp/tmp.MI6gIp8Q3C/third_party/unity/unity_jar_resolver/source/VersionHandlerImpl/src/Logger.cs:136)
-Google.ProjectSettings:Save () (at Z:/tmp/tmp.MI6gIp8Q3C/third_party/unity/unity_jar_resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:844)
-Google.ProjectSettings:SetBool (string,bool,Google.SettingsLocation) (at Z:/tmp/tmp.MI6gIp8Q3C/third_party/unity/unity_jar_resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:485)
-Google.ProjectSettings:SetBool (string,bool) (at Z:/tmp/tmp.MI6gIp8Q3C/third_party/unity/unity_jar_resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:497)
-Google.IOSResolver:set_VerboseLoggingEnabled (bool) (at Z:/tmp/tmp.n9hWFiuJ4V/third_party/unity/unity_jar_resolver/source/IOSResolver/src/IOSResolver.cs:1007)
-Google.IOSResolver:.cctor () (at Z:/tmp/tmp.n9hWFiuJ4V/third_party/unity/unity_jar_resolver/source/IOSResolver/src/IOSResolver.cs:701)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Z:/tmp/tmp.MI6gIp8Q3C/third_party/unity/unity_jar_resolver/source/VersionHandlerImpl/src/Logger.cs Line: 136)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.197 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2198ms)
-		BeginReloadAssembly (123ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (2023ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (370ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1319ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (1136ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 3.70 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.9 MB.
-System memory in use after: 181.9 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5085.
-Total: 29.615400 ms (FindLiveObjects: 0.487000 ms CreateObjectMapping: 0.231700 ms MarkObjects: 27.729100 ms  DeleteObjects: 1.165800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011697 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.77 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.243 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2244ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (2058ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (368ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1347ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (1161ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.46 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.9 MB.
-System memory in use after: 182.0 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5087.
-Total: 28.731400 ms (FindLiveObjects: 0.485100 ms CreateObjectMapping: 0.198700 ms MarkObjects: 26.874400 ms  DeleteObjects: 1.171700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 338.397165 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/arcadeidle
-  artifactKey: Guid(bc977c8d5f37ee242932e007181dc0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/arcadeidle using Guid(bc977c8d5f37ee242932e007181dc0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edffcd2fccf817f853222df9efe087a2') in 0.024395 seconds 
-  Import took 0.033742 seconds .
+  path: Assets/Resources/Levels/Level_18.prefab
+  artifactKey: Guid(133a805ceb825b5418655f99f8bcf2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_18.prefab using Guid(133a805ceb825b5418655f99f8bcf2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdacedb579a9952f9fc0ab15de9b49d') in 0.240600 seconds 
+  Import took 0.253627 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.987638 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated
-  artifactKey: Guid(c471d0362f5bf0e4d9a03be12014b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated using Guid(c471d0362f5bf0e4d9a03be12014b547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277ddd3ed35b518a07dbd4959bfc3845') in 0.001816 seconds 
-  Import took 0.014745 seconds .
+  Time since last request: 270.312119 seconds.
+  path: Assets/Resources/Levels/Level_20.prefab
+  artifactKey: Guid(dfa6d5d89cef83b47acadc851032b6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_20.prefab using Guid(dfa6d5d89cef83b47acadc851032b6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c652ab4ee54af3d3648069558f7c7009') in 0.346251 seconds 
+  Import took 0.379141 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.900249 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_DashTarget.prefab
-  artifactKey: Guid(1c9d03cfdf9e3024297bcc1bb6bb19b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_DashTarget.prefab using Guid(1c9d03cfdf9e3024297bcc1bb6bb19b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b997340a8ab1c2e30b72b3b5ff8ee1eb') in 0.091840 seconds 
-  Import took 0.099673 seconds .
+  Time since last request: 4.411623 seconds.
+  path: Assets/Resources/Levels/Level_21.prefab
+  artifactKey: Guid(5824dd203e8b0b84b9579b8900232bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_21.prefab using Guid(5824dd203e8b0b84b9579b8900232bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b7fda014e4c46a7cdd58fcd1022974') in 0.091572 seconds 
+  Import took 0.117223 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_L.prefab
-  artifactKey: Guid(1ba5f0781830947448dfab5ac16f2293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_L.prefab using Guid(1ba5f0781830947448dfab5ac16f2293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ee1c3e2fd8cd5ee2422edcaf1002c1') in 0.212200 seconds 
-  Import took 0.220220 seconds .
+  Time since last request: 3.994596 seconds.
+  path: Assets/Resources/Levels/Level_80 1.prefab
+  artifactKey: Guid(e243c6c8503c5944b8f0105b49571508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_80 1.prefab using Guid(e243c6c8503c5944b8f0105b49571508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893bf378b653e8ef5b76f6eb7e3ab290') in 0.092868 seconds 
+  Import took 0.105631 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideStarter_L.prefab
-  artifactKey: Guid(709c93b2176958143a3871db168c299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideStarter_L.prefab using Guid(709c93b2176958143a3871db168c299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97bf22021dc0d3b29799c46a3a60da3') in 0.035507 seconds 
-  Import took 0.044305 seconds .
+  Time since last request: 9.113337 seconds.
+  path: Assets/Resources/Levels/Level_22.prefab
+  artifactKey: Guid(e243c6c8503c5944b8f0105b49571508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_22.prefab using Guid(e243c6c8503c5944b8f0105b49571508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231189ea97d8c751badb0283130e2565') in 0.080067 seconds 
+  Import took 0.094211 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts.prefab
-  artifactKey: Guid(86a590a41b8790245bcaf39a7aa24111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts.prefab using Guid(86a590a41b8790245bcaf39a7aa24111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b5d72a15f389f0026ec71d318c1594') in 0.014865 seconds 
-  Import took 0.024023 seconds .
+  Time since last request: 50.167098 seconds.
+  path: Assets/Resources/Levels/Level_70 1.prefab
+  artifactKey: Guid(924f29549be18a349952a54ff035446f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_70 1.prefab using Guid(924f29549be18a349952a54ff035446f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b60a65914b5a47ca8b57e92def0eba') in 0.062433 seconds 
+  Import took 0.075417 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWay.prefab
-  artifactKey: Guid(25d299addfb21bf4e8f0e71a01ab245a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWay.prefab using Guid(25d299addfb21bf4e8f0e71a01ab245a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb5f5a07a1a27a23766c01e5b7daeb5') in 0.033380 seconds 
-  Import took 0.042040 seconds .
+  Time since last request: 0.000225 seconds.
+  path: Assets/Resources/Levels/Level_77 1.prefab
+  artifactKey: Guid(0c343f7aec1b039498b0af2a0da689e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_77 1.prefab using Guid(0c343f7aec1b039498b0af2a0da689e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b35dc67ebdebc99cc4d08501af0c6f5') in 0.064603 seconds 
+  Import took 0.080169 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideExiter.prefab
-  artifactKey: Guid(482e2b87000937b429460fe88f60bec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideExiter.prefab using Guid(482e2b87000937b429460fe88f60bec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53e581f7d4de6b1adf7c04f74576af1') in 0.005218 seconds 
-  Import took 0.013953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallDieArea.prefab
-  artifactKey: Guid(97c4c6b4426257d4ab351b574f892bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallDieArea.prefab using Guid(97c4c6b4426257d4ab351b574f892bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bf6484f6a0fe6991e0493fd26c4026') in 0.004626 seconds 
-  Import took 0.014915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWayStarter.prefab
-  artifactKey: Guid(6bcdb8e5f3a68894f841de9a840b0dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWayStarter.prefab using Guid(6bcdb8e5f3a68894f841de9a840b0dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf78958a669e58434d4bb3c9c334814') in 0.020385 seconds 
-  Import took 0.037559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallZoneStarter.prefab
-  artifactKey: Guid(3690ae4647d5a3a4b850e1c9c9267310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallZoneStarter.prefab using Guid(3690ae4647d5a3a4b850e1c9c9267310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e973a9ebaf4097c822136216814eb3') in 0.013518 seconds 
-  Import took 0.022681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWayExiter.prefab
-  artifactKey: Guid(154afd8c9fdc7184983601c38c677423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_TwoWayExiter.prefab using Guid(154afd8c9fdc7184983601c38c677423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b70a745b425e2a107c06bd63f727320') in 0.013710 seconds 
-  Import took 0.023236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_R.prefab
-  artifactKey: Guid(b560163d7cad5a9439bf5b89c9b215f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_R.prefab using Guid(b560163d7cad5a9439bf5b89c9b215f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064163eec57cac82e2433b8d6d53fa44') in 0.023754 seconds 
-  Import took 0.033291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallZoneExiter.prefab
-  artifactKey: Guid(35f91e829491d3b4aa383b3fab83d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_FallZoneExiter.prefab using Guid(35f91e829491d3b4aa383b3fab83d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf49cc1d4210d34984e094fd33d6d14') in 0.005457 seconds 
-  Import took 0.015235 seconds .
+  Time since last request: 0.000595 seconds.
+  path: Assets/Resources/Levels/Level_78 1.prefab
+  artifactKey: Guid(91fb9a5c3623dff41b9fd8697b3e0e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_78 1.prefab using Guid(91fb9a5c3623dff41b9fd8697b3e0e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27ae7eb827dcf672465fb881542e2f5') in 0.059989 seconds 
+  Import took 0.072038 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000200 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_R.prefab
-  artifactKey: Guid(b560163d7cad5a9439bf5b89c9b215f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_Wall_R.prefab using Guid(b560163d7cad5a9439bf5b89c9b215f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064163eec57cac82e2433b8d6d53fa44') in 0.023886 seconds 
-  Import took 0.034757 seconds .
+  path: Assets/Resources/Levels/Level_76 1.prefab
+  artifactKey: Guid(219a60f8749a8ce41b3998faa32a78af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_76 1.prefab using Guid(219a60f8749a8ce41b3998faa32a78af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e427cd9973c51a371e40dfb2193dd8f7') in 0.066346 seconds 
+  Import took 0.078939 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_Collider.prefab
-  artifactKey: Guid(2ded6664b1403a74bb28cfd075381a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_Collider.prefab using Guid(2ded6664b1403a74bb28cfd075381a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f807469767f90114cc7f7443341bf6') in 0.004568 seconds 
-  Import took 0.013385 seconds .
+  Time since last request: 6.482799 seconds.
+  path: Assets/Resources/Levels/Level_23.prefab
+  artifactKey: Guid(924f29549be18a349952a54ff035446f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_23.prefab using Guid(924f29549be18a349952a54ff035446f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f0b0fe3c5c864471240722ef3a3af3') in 0.087481 seconds 
+  Import took 0.100752 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_GrindJumpPad.prefab
-  artifactKey: Guid(c714101e571c09f4eb51f695e21fd60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_GrindJumpPad.prefab using Guid(c714101e571c09f4eb51f695e21fd60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3694ccad05608da48a89fd0568ea6f1') in 0.024210 seconds 
-  Import took 0.035113 seconds .
+  Time since last request: 7.027907 seconds.
+  path: Assets/Resources/Levels/Level_24.prefab
+  artifactKey: Guid(219a60f8749a8ce41b3998faa32a78af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_24.prefab using Guid(219a60f8749a8ce41b3998faa32a78af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60eb789b2f16fb5403b6f200db744abd') in 0.079469 seconds 
+  Import took 0.093187 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_Water.prefab
-  artifactKey: Guid(11d3001c17ee951419ce90d8832c2528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/TrackParts_Water.prefab using Guid(11d3001c17ee951419ce90d8832c2528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cdbc538051aa5acb2245d67c092415') in 0.029803 seconds 
-  Import took 0.038077 seconds .
+  Time since last request: 5.298146 seconds.
+  path: Assets/Resources/Levels/Level_25.prefab
+  artifactKey: Guid(0c343f7aec1b039498b0af2a0da689e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_25.prefab using Guid(0c343f7aec1b039498b0af2a0da689e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49fabc83b9341abae0d084f8f56a031') in 0.079077 seconds 
+  Import took 0.092711 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideStarter_R.prefab
-  artifactKey: Guid(b87e2cb156aaab34287be7eff2ad34ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster_HitRun/Resources/prefabs/tracks/autocreated/Track_WallRideStarter_R.prefab using Guid(b87e2cb156aaab34287be7eff2ad34ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d03122d60527dbf1218b1268eabeeb') in 0.028917 seconds 
-  Import took 0.038724 seconds .
+  Time since last request: 5.260481 seconds.
+  path: Assets/Resources/Levels/Level_26.prefab
+  artifactKey: Guid(91fb9a5c3623dff41b9fd8697b3e0e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Levels/Level_26.prefab using Guid(91fb9a5c3623dff41b9fd8697b3e0e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286fa80d39b5d7a19cbddd0053f1b1eb') in 0.078649 seconds 
+  Import took 0.091746 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 73.552107 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482a362b8fe5ce36b302051eaf90a735') in 0.067497 seconds 
-  Import took 0.081130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bfc51c5222557aa47c55c3d1b82acd') in 0.024054 seconds 
-  Import took 0.032465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c4f4f2da4d2ab57d901e0f40ae3f2f') in 0.095563 seconds 
-  Import took 0.103997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482a362b8fe5ce36b302051eaf90a735') in 0.022645 seconds 
-  Import took 0.030865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c4f4f2da4d2ab57d901e0f40ae3f2f') in 0.013879 seconds 
-  Import took 0.022070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04e83a3ced5728bb4dd34ee6ade0fc08') in 0.032952 seconds 
-  Import took 0.040997 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013973 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 3.96 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.304 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2305ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (2100ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (392ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (1329ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (1141ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.71 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.0 MB.
-System memory in use after: 182.1 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5094.
-Total: 33.656400 ms (FindLiveObjects: 0.602700 ms CreateObjectMapping: 0.239900 ms MarkObjects: 31.129400 ms  DeleteObjects: 1.682300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013102 seconds.
-Begin MonoManager ReloadAssembly
-Error: Could not load signature of Firebase.Crashlytics.Editor.iOSPostBuild:SetupGUIDForSymbolUploads due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-
-Unloading broken assembly Packages/com.google.firebase.crashlytics/Firebase/Editor/Firebase.Crashlytics.Editor.dll, this assembly can cause crashes in the runtime
-
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.43 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.928 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1929ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1748ms)
-			LoadAssemblies (105ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (342ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (1083ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (926ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.43 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4615 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 183.2 MB.
-System memory in use after: 182.4 MB.
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 5096.
-Total: 28.292500 ms (FindLiveObjects: 0.446900 ms CreateObjectMapping: 0.174600 ms MarkObjects: 26.585900 ms  DeleteObjects: 1.083200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

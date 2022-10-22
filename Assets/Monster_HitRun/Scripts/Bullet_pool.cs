@@ -36,7 +36,7 @@ public class Bullet_pool : MonoBehaviour
     }
     public void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, targetPos.transform.position, 0.2f), 10f);
+        transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, targetPos.transform.position, 0.2f), 13f);
     }
    
     void Update()

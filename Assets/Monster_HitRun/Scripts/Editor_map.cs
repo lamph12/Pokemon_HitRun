@@ -35,22 +35,22 @@ public class Editor_map : Editor
         {
             Map.createmty();
         }
-        if (GUILayout.Button("Creat Trap/TRap kc la 2 la lien nhau"))
-        {
-            Map.creat_Trap();
-        }
-        if (GUILayout.Button("Creat Loxo/ LOxo kc la 19"))
-        {
-            Map.creat_Loxo();
-        }
-        if (GUILayout.Button("Creat coins/ Coins kc la 2"))
+        //if (GUILayout.Button("Creat Trap/TRap kc la 2 la lien nhau"))
+        //{
+        //    Map.creat_Trap();
+        //}
+        //if (GUILayout.Button("Creat Loxo/ LOxo kc la 19"))
+        //{
+        //    Map.creat_Loxo();
+        //}
+        if (GUILayout.Button("Creat coins/ Coins kc la 3"))
         {
             Map.creat_Coins();
         }
-        if (GUILayout.Button("Back"))
-        {
-            Map.back();
-        }
+        //if (GUILayout.Button("Back"))
+        //{
+        //    Map.back();
+        //}
         if (GUILayout.Button("Creat enemyChick /kc la3"))
         {
             Map.createChick();

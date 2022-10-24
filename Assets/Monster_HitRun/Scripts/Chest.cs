@@ -7,19 +7,31 @@ public class Chest : MonoBehaviour
 {
     public Prize prize;
     private Button yourButton;
+    public Image imageCoins;
+    public Image imageSkin;
+    public int numberCoins;
     private bool onclick= false;
-    public Text numbercoins;
-    public class Giftypessss
-    {
-        bool coins;
-        int number;
-        Sprite icon;
-    }
+    public Text numberCoinstxt;
+    public bool Coins;
+    public int id;
+    
 
-    void Start()
+    public void Init()
     {
         yourButton = GetComponent<Button>();
         yourButton.onClick.AddListener(onchest);
+        Debug.Log("so lan");
+        if (Coins)
+        {
+            numberCoins = Random.Range(500, 3001);
+            numberCoinstxt.text = numberCoins.ToString();
+            
+
+        }
+        else
+        {
+            Debug.Log("yeu em");
+        }
     }
 
 
@@ -34,11 +46,17 @@ public class Chest : MonoBehaviour
                 Debug.Log("da mo chest");
                 //gameObject.SetActive(false);
                 gameObject.transform.GetChild(0).gameObject.SetActive(false);
-                gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                //gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                if (Coins)
+                {
+
+                }
             }
             onclick = true;
         }
 
     }
+
+
    
 }

@@ -8,9 +8,9 @@ public class Prize : MonoBehaviour
     private bool key;
     public int numberprize =3;
     public List<Chest> listchest;
-    [SerializeField]private GameObject Chestvideo;
-    [SerializeField] private GameObject Chestkey;
-    [SerializeField] private GameObject NoThanks;
+    public GameObject Chestvideo;
+    public GameObject Chestkey;
+    public GameObject NoThanks;
     int numberrandom;
     
 
@@ -26,8 +26,8 @@ public class Prize : MonoBehaviour
         foreach(var lis in listchest)
         {
             Debug.Log("kakakakakak");
-            
-            if (lis.id!=numberrandom)
+
+            if (lis.id != numberrandom)
             {
                 Debug.Log("da vao 1");
                 lis.Coins = true;
@@ -45,14 +45,7 @@ public class Prize : MonoBehaviour
    
 
     // Update is called once per frame
-    void Update()
-    {
-        if (numberprize == 0)
-        {
-            Chestkey.SetActive(false);
-            Chestvideo.SetActive(true);
-        }
-    }
+   
     public void off()
     {
         gameObject.SetActive(false);

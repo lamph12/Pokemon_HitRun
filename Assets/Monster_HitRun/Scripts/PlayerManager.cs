@@ -160,7 +160,7 @@ public class PlayerManager : MonoBehaviour
 
             }
             
-            if (transform.position.y > 4f)
+            if (transform.position.y > 10f)
             {
                 Debug.Log("nhay xuong");
                 rigidbody.velocity = new Vector3(0, -2.5f, 0);
@@ -192,15 +192,15 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.CompareTag ("Lo_xo"))
         {
-            rigidbody.velocity = new Vector3(0, 13f, 0);
+            rigidbody.velocity = new Vector3(0, 15f,0);
             Debug.Log("aaaa");
             anim.SetBool("IsJump", true);
             anim.SetBool("IsRun", false);
 
-            rigidbody.velocity = new Vector3(0, 8.5f, -3);
-            Debug.Log("aaaa");
-            anim.SetBool("IsJump", true);
-            anim.SetBool("IsRun", false);
+            //rigidbody.velocity = new Vector3(0, 8.5f, -3);
+            //Debug.Log("aaaa");
+            //anim.SetBool("IsJump", true);
+            //anim.SetBool("IsRun", false);
 
         }
         if (other.CompareTag("Lo_xo_right"))

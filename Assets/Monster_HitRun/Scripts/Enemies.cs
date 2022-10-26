@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Enemies : MonoBehaviour
 {
@@ -8,16 +10,21 @@ public class Enemies : MonoBehaviour
     public bool shotted;
     private Rigidbody rgEnemies;
     private Collider collider;
+    public TextEnemy textenemy;
+    public bool Boss;
 
     
-    private void Start()
-    {
+    
 
+     void Start()
+    {
         shotted = false;
         rgEnemies = GetComponent<Rigidbody>();
         collider = transform.gameObject.GetComponent<Collider>();
-
-
+        if(Boss)
+        {
+            textenemy.Init();
+        }
     }
 
     private void OnTriggerEnter(Collider other)

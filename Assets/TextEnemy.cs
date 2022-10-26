@@ -7,18 +7,16 @@ public class TextEnemy : MonoBehaviour
 {
     private TMPro.TextMeshProUGUI textenemy;
     public Enemies lvBat;
-    private GameObject Player;
     public Image EnoughLv;
     public Image notEnoughLv;
-    private PlayerManager temp;
 
 
-    private void Start()
+
+    public void Init()
     {
         textenemy = GetComponent<TMPro.TextMeshProUGUI>();
         textenemy.text = "Lv"+ lvBat.lvenemies.ToString() ;
-        Player = GameObject.Find("Boy_run");
-        temp = Player.GetComponent<PlayerManager>();
+        //temp = Player.GetComponent<PlayerManager>();
        
     }
 
@@ -26,15 +24,20 @@ public class TextEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lvBat.lvenemies >temp.lvPlayer)
+        
+        checkLevel();
+    }
+    void checkLevel()
+    {
+        if (lvBat.lvenemies > PlayerManager.PlayerManagerIstance.lvPlayer)
         {
-            EnoughLv.gameObject.SetActive(false);
-            notEnoughLv.gameObject.SetActive(true);
+            EnoughLv.enabled = false;
+            notEnoughLv.enabled = true;
         }
         else
         {
-            EnoughLv.gameObject.SetActive(true);
-            notEnoughLv.gameObject.SetActive(false);
+            EnoughLv.enabled = true;
+            notEnoughLv.enabled = false;
         }
     }
 }

@@ -774,7 +774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &184889717236385461
 RectTransform:
   m_ObjectHideFlags: 0
@@ -995,6 +995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvenemies: 10
   shotted: 0
+  textenemy: {fileID: 184889715983504616}
+  Boss: 1
 --- !u!54 &184889717315625400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1360,7 +1362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &184889717788894529
 RectTransform:
   m_ObjectHideFlags: 0

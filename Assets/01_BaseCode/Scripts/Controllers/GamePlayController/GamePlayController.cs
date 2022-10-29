@@ -1,6 +1,7 @@
 using Crystal;
 using UnityEngine;
 
+
 public enum StateGame
 {
     Loading = 0,
@@ -18,7 +19,6 @@ public class GamePlayController : Singleton<GamePlayController>
     public GameScene gameScene;
     public MenuManager menuManager;
     public PlayerManager Player;
-
 
     public StateGame state;
 
@@ -125,6 +125,7 @@ if (safeArea != null)
     {
         if (Player.Win == true)
         {
+            
 
             //GameController.Instance.useProfile.CurrentLevelPlay++;
             Debug.Log("da WIn");

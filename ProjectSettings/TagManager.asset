@@ -21,6 +21,7 @@ TagManager:
   - in
   - out
   - Speed
+  - Key
   layers:
   - Default
   - TransparentFX

@@ -61,7 +61,7 @@ public class Pool_manager : MonoBehaviour
             Bullet_pool bullet = pooldictionary[name].Dequeue();
             bullet.Init(posBullet, hit.transform);
             pooldictionary[name].Enqueue(bullet);
-            thoigian = Time.time + 0.01f;
+            thoigian = Time.time + 0.001f;
         }
     }
 

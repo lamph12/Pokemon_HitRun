@@ -43,6 +43,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvenemies: 1
   shotted: 0
+  textenemy: {fileID: 0}
+  Boss: 0
 --- !u!1001 &4055093442499557437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50,6 +52,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4223106167295946508, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8eff0c48e4cc4de42abed467ebd8ab2a, type: 2}
     - target: {fileID: 4223106167304962284, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
       propertyPath: m_RootOrder
       value: 0

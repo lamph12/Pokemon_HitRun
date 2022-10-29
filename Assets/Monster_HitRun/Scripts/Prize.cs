@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Prize : MonoBehaviour
 {
-    private bool key;
     public int numberprize =3;
     public List<Chest> listchest;
     public GameObject Chestvideo;
@@ -25,17 +24,14 @@ public class Prize : MonoBehaviour
 
         foreach(var lis in listchest)
         {
-            Debug.Log("kakakakakak");
 
             if (lis.id != numberrandom)
             {
-                Debug.Log("da vao 1");
                 lis.Coins = true;
                 lis.Init();
             }
             else
             {
-                Debug.Log("da vao 2");
                 lis.Coins = false;
                 lis.Init();
             }
@@ -49,6 +45,10 @@ public class Prize : MonoBehaviour
     public void off()
     {
         gameObject.SetActive(false);
+        GraphicRaycaster menu;
+        menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+        menu.enabled = true;
+        GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
     }
 
 

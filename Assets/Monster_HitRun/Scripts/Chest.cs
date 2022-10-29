@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class Chest : MonoBehaviour
 {
     public Prize prize;
-    public PlayerManager CoinsPlayer;
+    public CoinPicker CoinsPlayer;
     private Button yourButton;
     public int numberCoins;
     private bool onclick= false;
     public Text numberCoinstxt;
     public bool Coins;
+    private bool afterChest=true;
     public int id;
     
 
@@ -22,9 +23,7 @@ public class Chest : MonoBehaviour
         if (Coins)
         {
             numberCoins = Random.Range(500, 3001);
-            numberCoinstxt.text = numberCoins.ToString();
-            
-
+            numberCoinstxt.text = numberCoins.ToString();                     
         }
         else
         {
@@ -63,13 +62,15 @@ public class Chest : MonoBehaviour
 
             }
             
+            
             onclick = true;
+            CoinPicker.coinPicker.coins += numberCoins;
         }
         
     }
     private void Update()
     {
-        if(prize.numberprize <= 0)
+        if(prize.numberprize <= 0 && afterChest)
         {
             StartCoroutine("endChest");
         }
@@ -78,7 +79,8 @@ public class Chest : MonoBehaviour
 
     IEnumerator  endChest()
     {
-        yield return new WaitForSeconds(0.5f);
+       
+        yield return new WaitForSeconds(0.3f);
         if (Coins)
         {
             gameObject.transform.GetChild(0).gameObject.SetActive(false);
@@ -93,6 +95,34 @@ public class Chest : MonoBehaviour
         }
         prize.Chestkey.SetActive(false);
         prize.Chestvideo.SetActive(true);
+        afterChest = false;
+        yield return new WaitForSeconds(1.2f);
+        afterChestEnd();
+        
+
+
     }
 
+    void afterChestEnd()
+    {
+       
+        if (!onclick)
+        {
+            if (Coins)
+            {
+                gameObject.transform.GetChild(1).gameObject.SetActive(false);
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                
+            }
+            else
+            {
+                gameObject.transform.GetChild(2).gameObject.SetActive(false);
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                
+            }
+           
+        }
+        
+    }
+    
 }

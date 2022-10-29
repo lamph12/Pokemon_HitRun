@@ -33,6 +33,12 @@ public class CoinPicker : MonoBehaviour
     private void Update()
     {
         textcoins.text = coins.ToString() + " :";
+        int cois = PlayerPrefs.GetInt("coins");
+        if (coins!= cois)
+        {
+            PlayerPrefs.SetInt("coins", coins);
+            Debug.Log("da cong tien");
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -47,10 +53,10 @@ public class CoinPicker : MonoBehaviour
         if (other.CompareTag("coins"))
         {
             coins++;
-            PlayerPrefs.SetInt("coins", coins);
+            //PlayerPrefs.SetInt("coins", coins);
             Destroy(other.gameObject);
             //Debug.Log("coins" + coins);
-            textcoins.text = coins.ToString() + " :";
+            //textcoins.text = coins.ToString() + " :";
         }
     }
 }

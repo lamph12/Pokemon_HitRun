@@ -17,7 +17,7 @@ public class TextEnemy : MonoBehaviour
         textenemy = GetComponent<TMPro.TextMeshProUGUI>();
         textenemy.text = "Lv"+ lvBat.lvenemies.ToString() ;
         //temp = Player.GetComponent<PlayerManager>();
-       
+        Debug.Log("dam vao text");  
     }
 
 

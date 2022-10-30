@@ -20,15 +20,18 @@ public class Enemies : MonoBehaviour
      void Start()
     {
         shotted = false;
-        rgEnemies = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
+        rgEnemies = GetComponent<Rigidbody>();       
+        if (Boss)
+         anim=   transform.GetChild(0).GetComponent<Animator>();
+        else
+            anim = GetComponent<Animator>();
         collider = transform.gameObject.GetComponent<Collider>();
         if(Boss)
         {
             textenemy.Init();
         }
 
-        anim.Play(0, -1, Random.value);
+        anim.Play((int)0.01f, -1, Random.value);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,7 +41,8 @@ public class Enemies : MonoBehaviour
         {
             //if (PlayerManager.PlayerManagerIstance.lvPlayer >= lvenemies)
                 PlayerManager.PlayerManagerIstance.lvPlayer = PlayerManager.PlayerManagerIstance.lvPlayer + lvenemies;
-            other.gameObject.SetActive(false);
+                other.gameObject.SetActive(false);
+                gameObject.SetActive(false);
             //else
                 
             //shotted = true;

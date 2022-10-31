@@ -21,11 +21,7 @@ public class PlayerManager : MonoBehaviour
     public Transform Ballpos;
 
     public float speed;
-    public float swipespees;
-    private Transform localtrans;
-    public Vector3 lastMouPos;
-    private Vector3 mousePos;
-    private Vector3 newPosfortrans;
+   
     private Touch touch;
     private float speedleftright = 0.016f;
 
@@ -43,6 +39,8 @@ public class PlayerManager : MonoBehaviour
     public ParticleSystem particleSpeed;
     public bool powerspeed;
 
+    public int numberKey;
+
 
     public bool Win;
     public bool therotation = true;
@@ -50,6 +48,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
+        
         rigidbody = gameObject.GetComponent<Rigidbody>();
         collider = gameObject.GetComponent<Collider>();
         anim = GetComponent<Animator>();
@@ -61,7 +60,7 @@ public class PlayerManager : MonoBehaviour
         //menuManager.Init();
         Win = false;
         therotation = true;
-        localtrans = GetComponent<Transform>();
+        //localtrans = GetComponent<Transform>();
         textlv.text = "Lv " + lvPlayer.ToString();
         
         thewall = false;
@@ -94,9 +93,9 @@ public class PlayerManager : MonoBehaviour
                 {
                     if (lvPlayer >= shot.lvenemies)
                     {
-                        rgenemies.isTrigger = true;
-                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject);
                         shot.shotted = true;
+                        rgenemies.isTrigger = true;
+                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject);                       
                         anim.SetLayerWeight(1, 1f);
                     }
 
@@ -160,7 +159,7 @@ public class PlayerManager : MonoBehaviour
 
             }
             
-            if (transform.position.y > 4f)
+            if (transform.position.y > 10f)
             {
                 Debug.Log("nhay xuong");
                 rigidbody.velocity = new Vector3(0, -2.5f, 0);
@@ -172,13 +171,31 @@ public class PlayerManager : MonoBehaviour
         {
             gameObject.SetActive(false);
             GamePlayController.Instance.menuManager.GameStace = false;
-            GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
+            if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+            {
+                GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+                GraphicRaycaster menu;
+                menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+                menu.enabled = false;
+            }
+
+            else
+                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
         if (lvPlayer <= 0)
         {
             gameObject.SetActive(false);
             GamePlayController.Instance.menuManager.GameStace = false;
-            GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
+            if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+            {
+                GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+                GraphicRaycaster menu;
+                menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+                menu.enabled=false;
+            }
+
+            else
+                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
 
     }
@@ -190,19 +207,19 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag ("Lo_xo"))
-        {
-            rigidbody.velocity = new Vector3(0, 13f, 0);
-            Debug.Log("aaaa");
-            anim.SetBool("IsJump", true);
-            anim.SetBool("IsRun", false);
+        //if (other.CompareTag ("Lo_xo"))
+        //{
+        //    rigidbody.velocity = new Vector3(0, 15f,0);
+        //    Debug.Log("aaaa");
+        //    anim.SetBool("IsJump", true);
+        //    anim.SetBool("IsRun", false);
 
-            rigidbody.velocity = new Vector3(0, 8.5f, -3);
-            Debug.Log("aaaa");
-            anim.SetBool("IsJump", true);
-            anim.SetBool("IsRun", false);
+        //    //rigidbody.velocity = new Vector3(0, 8.5f, -3);
+        //    //Debug.Log("aaaa");
+        //    //anim.SetBool("IsJump", true);
+        //    //anim.SetBool("IsRun", false);
 
-        }
+        //}
         if (other.CompareTag("Lo_xo_right"))
         {
             therotation = false;
@@ -328,8 +345,8 @@ public class PlayerManager : MonoBehaviour
         }
         if (collision.transform.CompareTag("Lo_xo"))
         {
-            speed = speed * 1.2f;
-            rigidbody.velocity = new Vector3(0, 10f, -8f);
+            speed = 18.7f;
+            rigidbody.velocity = new Vector3(0, 11f, -8f);
             Debug.Log("aaaa");
             anim.SetBool("IsJump", true);
             anim.SetBool("IsRun", false);
@@ -385,7 +402,16 @@ public class PlayerManager : MonoBehaviour
         {
             gameObject.SetActive(false);
             GamePlayController.Instance.menuManager.GameStace = false;
-            GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
+            if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+            {
+                GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+                GraphicRaycaster menu;
+                menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+                menu.enabled = false;
+            }
+
+            else
+                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
         yield return new WaitForSeconds(0.15f);
         Move = true;

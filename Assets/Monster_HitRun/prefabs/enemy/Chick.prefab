@@ -25,10 +25,23 @@ BoxCollider:
   m_GameObject: {fileID: 206579197111264497}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.54, y: 0.56, z: 0.7}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!65 &1381986062967743478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206579197111264497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.54, y: 0.7, z: 0.7}
+  m_Center: {x: 0, y: 0.27, z: 0}
 --- !u!114 &831372067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +56,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvenemies: 1
   shotted: 0
+  textenemy: {fileID: 0}
+  Boss: 0
 --- !u!1001 &4055093442499557437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50,6 +65,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4223106167295946508, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223106167295946508, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8eff0c48e4cc4de42abed467ebd8ab2a, type: 2}
     - target: {fileID: 4223106167304962284, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -117,6 +140,10 @@ PrefabInstance:
     - target: {fileID: 4223106167305329868, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
       propertyPath: m_TagString
       value: enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223106167305329870, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}
+      propertyPath: m_Name
+      value: Chicktt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab02178ff66919d49ab91c371b2068cb, type: 3}

@@ -81,7 +81,7 @@ public class Map : MonoBehaviour
     public void creatwall_right()
     {
         GameObject obj;
-        vitribatdau.z = stackPool.Peek();
+        //vitribatdau.z = stackPool.Peek();
         vitribatdau.y = 0;
         vitribatdau.x = 0;
         vitribatdau.z -= 157f + 7f;
@@ -92,7 +92,7 @@ public class Map : MonoBehaviour
     public void creatwall_left()
     {
         GameObject obj;
-        vitribatdau.z = stackPool.Peek(); 
+        //vitribatdau.z = stackPool.Peek(); 
         vitribatdau.y = 0;
         vitribatdau.x = 0;
         vitribatdau.z +=52-7f;
@@ -100,11 +100,11 @@ public class Map : MonoBehaviour
         vitribatdau.z -= 17;
         //stackPool.Push(vitribatdau.z);
     }
-    public void back()
-    {
-        //stackPool.Pop();
-        //delete();
-    }
+    //public void back()
+    //{
+    //    //stackPool.Pop();
+    //    //delete();
+    //}
     public void creat_Trap()
     {
         for (int i = 0; i < soluong; i++)
@@ -114,16 +114,16 @@ public class Map : MonoBehaviour
             vitribatdau.z += khoangcach;
         }
     }
-    public void creat_Loxo()
-    {
-        for (int i = 0; i < soluong; i++)
-        {
-            vitribatdau.y = 0.2f;
-            GameObject obj;
-            obj = Instantiate(Lo_xo, vitribatdau, Lo_xo.transform.rotation, Loxo_parent.transform);
-            vitribatdau.z += khoangcach;
-        }
-    }
+    //public void creat_Loxo()
+    //{
+    //    for (int i = 0; i < soluong; i++)
+    //    {
+    //        vitribatdau.y = 0.2f;
+    //        GameObject obj;
+    //        obj = Instantiate(Lo_xo, vitribatdau, Lo_xo.transform.rotation, Loxo_parent.transform);
+    //        vitribatdau.z += khoangcach;
+    //    }
+    //}
     public void creat_Coins()
     {
         Vector3 enemy = Coins.transform.position;

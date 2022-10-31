@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class creat_enemy : MonoBehaviour
 {
@@ -39,6 +40,15 @@ public class creat_enemy : MonoBehaviour
             {
                 other.gameObject.SetActive(false);
                 GamePlayController.Instance.menuManager.GameStace = false;
+                if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+                {
+                    GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+                    GraphicRaycaster menu;
+                    menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+                    menu.enabled = false;
+                }
+                    
+                else
                 GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
             }
         }

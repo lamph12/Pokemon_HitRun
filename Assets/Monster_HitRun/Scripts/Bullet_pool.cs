@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Bullet_pool : MonoBehaviour
 {
@@ -36,7 +37,8 @@ public class Bullet_pool : MonoBehaviour
     }
     public void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, targetPos.transform.position, 0.2f), 13.5f);
+        //transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, targetPos.transform.position, 0.2f), 13.5f);
+        transform.DOLocalMove(targetPos.position, 0.25f, false).OnComplete(() => gameObject.SetActive(false));
     }
    
     void Update()

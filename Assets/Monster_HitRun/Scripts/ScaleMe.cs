@@ -17,9 +17,9 @@ public class ScaleMe : MonoBehaviour
     }
     public void Move()
     {
-        transform.DOLocalMoveX(-96, 0.5f, false).SetEase(Ease.Linear).OnComplete(() =>
+        transform.DOLocalMoveX(-142, 0.5f, false).SetEase(Ease.Linear).OnComplete(() =>
         {
-            transform.DOLocalMoveX(108, 0.5f, false).SetEase(Ease.Linear).OnComplete(() =>
+            transform.DOLocalMoveX(163, 0.5f, false).SetEase(Ease.Linear).OnComplete(() =>
            Move());                            
         });
         

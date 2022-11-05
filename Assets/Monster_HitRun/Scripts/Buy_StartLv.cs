@@ -8,7 +8,7 @@ public class Buy_StartLv : MonoBehaviour
     
     private int usecoins;
     private int coinsupStart;
-    int Properties=1;
+    int Properties;
 
     public Text usecoinstext;
     public Text propertiestext;
@@ -19,12 +19,12 @@ public class Buy_StartLv : MonoBehaviour
 
     public void Start()
     {
-        usecoins = 50;
-        coinsupStart = 10;
-        Properties =1;
-        //coinsupStart = PlayerPrefs.GetInt("coinsupStart");
-        //usecoins = PlayerPrefs.GetInt("usecoins");
-        //Properties = PlayerPrefs.GetInt("Properties");
+        //usecoins = 50;
+        //coinsupStart = 10;
+        //Properties =1;
+        coinsupStart = PlayerPrefs.GetInt("coinsupStart",10);
+        usecoins = PlayerPrefs.GetInt("usecoins",50);
+        Properties = PlayerPrefs.GetInt("Properties",1);
         PlayerManager.PlayerManagerIstance.lvPlayer = Properties;
 
     }
@@ -37,7 +37,6 @@ public class Buy_StartLv : MonoBehaviour
     }
     public void Buy()
     {
-        Debug.Log("usecoins" + usecoins);
         if (CoinPicker.coinPicker.coins >= usecoins)
         {
             up.Play();

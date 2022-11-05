@@ -111,39 +111,7 @@ public class PlayerManager : MonoBehaviour
     public void MovePlayer()
     {
         PlayRun();
-        //if (Input.GetMouseButton(0))
-        //{
-        //    mousePos = cameramain.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 18));
-        //    float xDiff = mousePos.x - lastMouPos.x;
-
-        //    if (thewall)
-        //    {
-        //        newPosfortrans.x = localtrans.position.x;
-        //    }
-        //    else
-        //    {
-        //        //if (xDiff < 0.01)
-        //        {
-        //            newPosfortrans.x = localtrans.position.x + xDiff * swipespees * Time.deltaTime;
-        //            newPosfortrans.y = localtrans.position.y;
-        //            newPosfortrans.z = localtrans.position.z;
-        //            localtrans.position = newPosfortrans/* + localtrans.forward * speed * Time.deltaTime*/;
-        //            // vector direct
-        //            //trai -a phai +a;
-        //            // dis lastmouse mouse;
-        //            //a- ;
-        //            //Debug.Log("e diff" + xDiff);
-        //            lastMouPos = mousePos;
-        //        }
-
-        //        //if (xDiff >= 0 && xDiff < 0.1f)
-        //        //    transform.rotation = Quaternion.Euler(0, 30, 0);
-        //        //if (xDiff < 0 && xDiff > -0.1f)
-        //        //    transform.rotation = Quaternion.Euler(0, -30, 0);
-
-        //    }
-
-        //}
+        
         if (!thewall)
         {
 
@@ -182,21 +150,21 @@ public class PlayerManager : MonoBehaviour
             else
                 GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
-        if (lvPlayer <= 0)
-        {
-            gameObject.SetActive(false);
-            GamePlayController.Instance.menuManager.GameStace = false;
-            if (PlayerManager.PlayerManagerIstance.numberKey == 3)
-            {
-                GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
-                GraphicRaycaster menu;
-                menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
-                menu.enabled=false;
-            }
+        //if (lvPlayer <= 0)
+        //{
+        //    gameObject.SetActive(false);
+        //    GamePlayController.Instance.menuManager.GameStace = false;
+        //    if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+        //    {
+        //        GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+        //        GraphicRaycaster menu;
+        //        menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+        //        menu.enabled=false;
+        //    }
 
-            else
-                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
-        }
+        //    else
+        //        GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
+        //}
 
     }
 
@@ -233,6 +201,14 @@ public class PlayerManager : MonoBehaviour
             rigidbody.isKinematic = true;
             thewall = true;
 
+        }
+        if (other.CompareTag("coins"))
+        {
+            CoinPicker.coinPicker.coins++;
+            //PlayerPrefs.SetInt("coins", coins);
+            Destroy(other.gameObject);
+            //Debug.Log("coins" + coins);
+            //textcoins.text = coins.ToString() + " :";
         }
         if (other.CompareTag("Lo_xo_left"))
         {
@@ -365,10 +341,9 @@ public class PlayerManager : MonoBehaviour
         {
             Debug.Log("vao trap gai");
             Move = false;
-           
-            //rigidbody.AddForce(new Vector3(0, 0, -1) * 500);
             rigidbody.isKinematic = true;
             collider.isTrigger = true;
+            
             StartCoroutine(timeskip()); 
 
         }

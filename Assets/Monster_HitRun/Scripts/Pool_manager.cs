@@ -53,13 +53,13 @@ public class Pool_manager : MonoBehaviour
 
     //}
     
-    public void spawnpool_enemy(string name, Transform posBullet,GameObject hit)
+    public void spawnpool_enemy(string name, Transform posBullet,GameObject hit,int lve)
         {
         //Debug.LogError("HIt pos" + hit.transform.position);
         if (Time.time >= thoigian)
         {
             Bullet_pool bullet = pooldictionary[name].Dequeue();
-            bullet.Init(posBullet, hit.transform);
+            bullet.Init(posBullet, hit.transform,lve);
             pooldictionary[name].Enqueue(bullet);
             thoigian = Time.time + 0.001f;
         }

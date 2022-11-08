@@ -18,6 +18,7 @@ public class MiniGame: MonoBehaviour
     public Image coinsMove;
     public Transform CoinsPos;
     public Image coinstarget;
+    private int CoinsVideo;
 
     public Canvas canvas;
 
@@ -59,6 +60,7 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(false);
             xCoins_txt.text = "x2";
             xCoinsMini_txt.text = CoinsX2.ToString();
+            CoinsVideo = CoinsX2;
         }
         if((transform.localPosition.x > 29 && transform.localPosition.x <= 105)|| (transform.localPosition.x > -105 && transform.localPosition.x < -29))
         {
@@ -68,6 +70,7 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(false);
             xCoins_txt.text = "x3";
             xCoinsMini_txt.text = CoinsX3.ToString();
+            CoinsVideo = CoinsX3;
         }
         if (transform.localPosition.x >= -29 && transform.localPosition.x<= 29)
         {
@@ -77,12 +80,13 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(true);
             xCoins_txt.text = "x5";
             xCoinsMini_txt.text = CoinsX5.ToString();
+            CoinsVideo = CoinsX5;
         }
     }
     public void Coinsreceived()
     {
         CoinPicker.coinPicker.coins += Coins;
-        PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
+        //PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
         StartCoroutine("wainttime");
         for (int i = 0; i < 20; i++)
         {
@@ -102,8 +106,13 @@ public class MiniGame: MonoBehaviour
         Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
        
     }
+    
+
     public void KillTheAnimatioN()
     {
-        transform.DOKill();
+        transform.DOKill(false);
+        CoinPicker.coinPicker.coins += CoinsVideo;
+        StartCoroutine("wainttime");
+        
     }
 }

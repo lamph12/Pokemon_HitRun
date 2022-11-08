@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     private GameObject[] pathval_ = new GameObject[8];
     private List<GameObject> listpoint = new List<GameObject>();
     private List<Vector3> listvector = new List<Vector3>();
-
+    public LayerMask layerEnemy;
     public ParticleSystem particleSpeed;
     public bool powerspeed;
 
@@ -80,13 +80,12 @@ public class PlayerManager : MonoBehaviour
         var ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 13
-            ))
+        if (Physics.Raycast(ray, out hit, 13))
         {
             Debug.DrawRay(transform.position, transform.forward * 13, Color.red);
             if (hit.transform.gameObject.tag == "enemies")
             {
-                Debug.Log("da thay enemies");
+               
                 Enemies shot = hit.transform.gameObject.GetComponent<Enemies>();
                 Collider rgenemies = hit.transform.gameObject.GetComponent<Collider>();
                 if (!shot.shotted)
@@ -95,7 +94,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         shot.shotted = true;
                         rgenemies.isTrigger = true;
-                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject);                       
+                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject,shot.lvenemies);                       
                         anim.SetLayerWeight(1, 1f);
                     }
 
@@ -259,7 +258,15 @@ public class PlayerManager : MonoBehaviour
         {
             GameObject child = other.transform.GetChild(0).gameObject;
             toList(child);
+            Debug.Log("da vao");
             MovePaval(pathval_);
+        }
+        if (other.CompareTag("road1_1"))
+        {
+            GameObject child = other.transform.GetChild(0).gameObject;
+            toList(child);
+            MovePaval(pathval_);
+            Debug.Log("da vao");
         }
         if (other.CompareTag("road_2_1"))
         {

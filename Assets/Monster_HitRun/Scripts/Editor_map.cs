@@ -19,6 +19,10 @@ public class Editor_map : Editor
         {
             Map.road_1();
         }
+        if (GUILayout.Button("Creat road111_1"))
+        {
+            Map.road1_1();
+        }
         if (GUILayout.Button("Creat road_2"))
         {
             Map.road_2();

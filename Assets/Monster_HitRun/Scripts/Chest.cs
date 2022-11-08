@@ -24,10 +24,10 @@ public class Chest : MonoBehaviour
     public void Init()
     {
         
-        Debug.Log("so lan");
+
         if (Coins)
         {
-            numberCoins = Random.Range(500, 3001);
+            numberCoins = Random.Range(500, 1000);
             numberCoinstxt.text = numberCoins.ToString();                     
         }
         else

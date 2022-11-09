@@ -16,6 +16,7 @@ public class Map : MonoBehaviour
     public GameObject Lo_xo;
     public GameObject objectmap;
     public GameObject road_1map;
+    public GameObject road1_11map;
     public GameObject road_2map;
     public GameObject wall_right;
     public GameObject wall_left;
@@ -45,6 +46,7 @@ public class Map : MonoBehaviour
         //    stackPool.Push(-84);
         //}
         Debug.Log(vitribatdau.z);
+
         for(int i = 0; i < soluong; i++)
         {   //if(stackPool!=null)
             //vitribatdau.z= stackPool.Peek();
@@ -66,6 +68,16 @@ public class Map : MonoBehaviour
         vitribatdau.z += 22.5f;
         //stackPool.Push(vitribatdau.z);
 
+    }
+    public void road1_1()
+    {
+        GameObject obj;
+        vitribatdau.y = -0.23f;
+        vitribatdau.x = -0.3f;
+        vitribatdau.z += 11.24f;
+        obj = Instantiate(road1_11map, vitribatdau, road_1map.transform.rotation, Mapparent.transform);
+        vitribatdau.z += 11.26f;
+        //stackPool.Push(vitribatdau.z);
     }
     public void road_2()
     {

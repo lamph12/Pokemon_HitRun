@@ -37,20 +37,22 @@ public class Enemies : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Ball")
-        {
-            //if (PlayerManager.PlayerManagerIstance.lvPlayer >= lvenemies)
-                PlayerManager.PlayerManagerIstance.lvPlayer = PlayerManager.PlayerManagerIstance.lvPlayer + lvenemies;
-                other.gameObject.SetActive(false);
-                gameObject.SetActive(false);
-            //else
-                
-            //shotted = true;
-        }
+        //if (other.gameObject.tag == "Ball")
+        //{
+        //    //if (PlayerManager.PlayerManagerIstance.lvPlayer >= lvenemies)
+        //    PlayerManager.PlayerManagerIstance.lvPlayer = PlayerManager.PlayerManagerIstance.lvPlayer + lvenemies;
+        //    other.gameObject.SetActive(false);
+        //    gameObject.SetActive(false);
+        //    //else
+
+        //    //shotted = true;
+        //}
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("da vao chua");
             if (PlayerManager.PlayerManagerIstance.lvPlayer < lvenemies)
             {
+                Debug.Log("vao if");
                 other.gameObject.SetActive(false);
                 GamePlayController.Instance.menuManager.GameStace = false;
                 if (PlayerManager.PlayerManagerIstance.numberKey == 3)
@@ -67,19 +69,15 @@ public class Enemies : MonoBehaviour
 
 
             }
-            if(PlayerManager.PlayerManagerIstance.lvPlayer >= lvenemies)
+            else
             {
-              
-              
+
+                 Debug.Log("vao else");
                     PlayerManager.PlayerManagerIstance.lvPlayer = PlayerManager.PlayerManagerIstance.lvPlayer + lvenemies;
                     gameObject.SetActive(false);
               
             }
-            if (PlayerManager.PlayerManagerIstance.powerspeed)
-            {
-                PlayerManager.PlayerManagerIstance.lvPlayer = PlayerManager.PlayerManagerIstance.lvPlayer + lvenemies;
-                gameObject.SetActive(false);
-            }
+           
 
         }
     }

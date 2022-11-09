@@ -36,7 +36,6 @@ public class Buy_Boss : MonoBehaviour
     public void Buy()
     {
         
-        Debug.Log("usebuyboss"+usecoinsBoss);
         if (CoinPicker.coinPicker.coins >= usecoinsBoss)
         {
             up.Play();

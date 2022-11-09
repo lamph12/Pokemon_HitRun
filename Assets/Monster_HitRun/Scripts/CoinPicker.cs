@@ -16,20 +16,11 @@ public class CoinPicker : MonoBehaviour
     private void Start()
     {
         coins = PlayerPrefs.GetInt("coins");
+        Debug.Log(coins);
         //textcoins.text = "Coins :" + coins.ToString();3
              textcoins.text = coins.ToString() + " :";
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.transform.tag == "coins")
-    //    {         
-    //        coins++;          
-    //        Destroy(other.gameObject);
-    //        //Debug.Log("coins" + coins);
-    //        textcoins.text = "Coins :" + coins.ToString();
-
-    //    }
-    //}
+    
     private void Update()
     {
         textcoins.text = coins.ToString() + " :";
@@ -37,7 +28,7 @@ public class CoinPicker : MonoBehaviour
         if (coins!= cois)
         {
             PlayerPrefs.SetInt("coins", coins);
-            Debug.Log("da cong tien");
+ 
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -50,13 +41,6 @@ public class CoinPicker : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("coins"))
-        {
-            coins++;
-            //PlayerPrefs.SetInt("coins", coins);
-            Destroy(other.gameObject);
-            //Debug.Log("coins" + coins);
-            //textcoins.text = coins.ToString() + " :";
-        }
+        
     }
 }

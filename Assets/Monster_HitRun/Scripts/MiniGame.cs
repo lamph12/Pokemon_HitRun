@@ -15,6 +15,12 @@ public class MiniGame: MonoBehaviour
     public Text xCoinsMini_txt;
     public GameObject complte;
     public GameObject failed;
+    public Image coinsMove;
+    public Transform CoinsPos;
+    public Image coinstarget;
+    private int CoinsVideo;
+
+    public Canvas canvas;
 
     private int CoinsX2;
     private int CoinsX3;
@@ -54,6 +60,7 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(false);
             xCoins_txt.text = "x2";
             xCoinsMini_txt.text = CoinsX2.ToString();
+            CoinsVideo = CoinsX2;
         }
         if((transform.localPosition.x > 29 && transform.localPosition.x <= 105)|| (transform.localPosition.x > -105 && transform.localPosition.x < -29))
         {
@@ -63,6 +70,7 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(false);
             xCoins_txt.text = "x3";
             xCoinsMini_txt.text = CoinsX3.ToString();
+            CoinsVideo = CoinsX3;
         }
         if (transform.localPosition.x >= -29 && transform.localPosition.x<= 29)
         {
@@ -72,23 +80,39 @@ public class MiniGame: MonoBehaviour
             x5_img.SetActive(true);
             xCoins_txt.text = "x5";
             xCoinsMini_txt.text = CoinsX5.ToString();
+            CoinsVideo = CoinsX5;
         }
     }
     public void Coinsreceived()
     {
         CoinPicker.coinPicker.coins += Coins;
-        PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
+        //PlayerPrefs.SetInt("coins", CoinPicker.coinPicker.coins);
         StartCoroutine("wainttime");
+        for (int i = 0; i < 20; i++)
+        {
+            Debug.Log("da vao");
+            Image image = Instantiate(coinsMove);
+            image.transform.SetParent(canvas.transform);
+            image.transform.position = new Vector2(Random.Range(CoinsPos.position.x, CoinsPos.position.x + 474), Random.Range(CoinsPos.position.y, CoinsPos.position.y + 150));
+            image.transform.DOMove(coinstarget.transform.position, 1.7f).OnComplete(() => Destroy(image));
+            //image.transform.DOMove()
+
+        }
     }
     IEnumerator wainttime()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2.75f);
         //GamePlayController.Instance.menuManager.Retry_btn();
         Initiate.Fade(SceneName.GAME_PLAY, Color.black, 3f);
        
     }
+    
+
     public void KillTheAnimatioN()
     {
-        transform.DOKill();
+        transform.DOKill(false);
+        CoinPicker.coinPicker.coins += CoinsVideo;
+        StartCoroutine("wainttime");
+        
     }
 }

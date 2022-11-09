@@ -4649,7 +4649,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: db804af7e674ce245b740d49a1920972, type: 2}
-  - {fileID: 2100000, guid: db804af7e674ce245b740d49a1920972, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4707,7 +4706,7 @@ GameObject:
   - component: {fileID: 198658296272928374}
   - component: {fileID: 199206136173269660}
   m_Layer: 0
-  m_Name: ConfettiDirectionalOrange
+  m_Name: q
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9343,7 +9342,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cb06399f8d640a347a7adc63a58f324a, type: 2}
   - {fileID: 2100000, guid: cb06399f8d640a347a7adc63a58f324a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -14040,7 +14038,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc40e2beb02262d49a59386868513fb0, type: 2}
   - {fileID: 2100000, guid: dc40e2beb02262d49a59386868513fb0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

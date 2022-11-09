@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     private GameObject[] pathval_ = new GameObject[8];
     private List<GameObject> listpoint = new List<GameObject>();
     private List<Vector3> listvector = new List<Vector3>();
-
+    public LayerMask layerEnemy;
     public ParticleSystem particleSpeed;
     public bool powerspeed;
 
@@ -80,13 +80,12 @@ public class PlayerManager : MonoBehaviour
         var ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 13
-            ))
+        if (Physics.Raycast(ray, out hit, 13))
         {
             Debug.DrawRay(transform.position, transform.forward * 13, Color.red);
             if (hit.transform.gameObject.tag == "enemies")
             {
-                Debug.Log("da thay enemies");
+               
                 Enemies shot = hit.transform.gameObject.GetComponent<Enemies>();
                 Collider rgenemies = hit.transform.gameObject.GetComponent<Collider>();
                 if (!shot.shotted)
@@ -95,7 +94,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         shot.shotted = true;
                         rgenemies.isTrigger = true;
-                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject);                       
+                        Pool_manager.Pool_managerInstance.spawnpool_enemy("bong", Ballpos, hit.transform.gameObject,shot.lvenemies);                       
                         anim.SetLayerWeight(1, 1f);
                     }
 
@@ -111,39 +110,7 @@ public class PlayerManager : MonoBehaviour
     public void MovePlayer()
     {
         PlayRun();
-        //if (Input.GetMouseButton(0))
-        //{
-        //    mousePos = cameramain.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 18));
-        //    float xDiff = mousePos.x - lastMouPos.x;
-
-        //    if (thewall)
-        //    {
-        //        newPosfortrans.x = localtrans.position.x;
-        //    }
-        //    else
-        //    {
-        //        //if (xDiff < 0.01)
-        //        {
-        //            newPosfortrans.x = localtrans.position.x + xDiff * swipespees * Time.deltaTime;
-        //            newPosfortrans.y = localtrans.position.y;
-        //            newPosfortrans.z = localtrans.position.z;
-        //            localtrans.position = newPosfortrans/* + localtrans.forward * speed * Time.deltaTime*/;
-        //            // vector direct
-        //            //trai -a phai +a;
-        //            // dis lastmouse mouse;
-        //            //a- ;
-        //            //Debug.Log("e diff" + xDiff);
-        //            lastMouPos = mousePos;
-        //        }
-
-        //        //if (xDiff >= 0 && xDiff < 0.1f)
-        //        //    transform.rotation = Quaternion.Euler(0, 30, 0);
-        //        //if (xDiff < 0 && xDiff > -0.1f)
-        //        //    transform.rotation = Quaternion.Euler(0, -30, 0);
-
-        //    }
-
-        //}
+        
         if (!thewall)
         {
 
@@ -182,21 +149,21 @@ public class PlayerManager : MonoBehaviour
             else
                 GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
         }
-        if (lvPlayer <= 0)
-        {
-            gameObject.SetActive(false);
-            GamePlayController.Instance.menuManager.GameStace = false;
-            if (PlayerManager.PlayerManagerIstance.numberKey == 3)
-            {
-                GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
-                GraphicRaycaster menu;
-                menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
-                menu.enabled=false;
-            }
+        //if (lvPlayer <= 0)
+        //{
+        //    gameObject.SetActive(false);
+        //    GamePlayController.Instance.menuManager.GameStace = false;
+        //    if (PlayerManager.PlayerManagerIstance.numberKey == 3)
+        //    {
+        //        GameObject prize = Instantiate(Resources.Load<GameObject>("UI/PanelPrizesnomal"));
+        //        GraphicRaycaster menu;
+        //        menu = GamePlayController.Instance.menuManager.GetComponent<GraphicRaycaster>();
+        //        menu.enabled=false;
+        //    }
 
-            else
-                GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
-        }
+        //    else
+        //        GamePlayController.Instance.menuManager.BonusEndgame.gameObject.SetActive(true);
+        //}
 
     }
 
@@ -233,6 +200,14 @@ public class PlayerManager : MonoBehaviour
             rigidbody.isKinematic = true;
             thewall = true;
 
+        }
+        if (other.CompareTag("coins"))
+        {
+            CoinPicker.coinPicker.coins++;
+            //PlayerPrefs.SetInt("coins", coins);
+            Destroy(other.gameObject);
+            //Debug.Log("coins" + coins);
+            //textcoins.text = coins.ToString() + " :";
         }
         if (other.CompareTag("Lo_xo_left"))
         {
@@ -283,7 +258,15 @@ public class PlayerManager : MonoBehaviour
         {
             GameObject child = other.transform.GetChild(0).gameObject;
             toList(child);
+            Debug.Log("da vao");
             MovePaval(pathval_);
+        }
+        if (other.CompareTag("road1_1"))
+        {
+            GameObject child = other.transform.GetChild(0).gameObject;
+            toList(child);
+            MovePaval(pathval_);
+            Debug.Log("da vao");
         }
         if (other.CompareTag("road_2_1"))
         {
@@ -365,10 +348,9 @@ public class PlayerManager : MonoBehaviour
         {
             Debug.Log("vao trap gai");
             Move = false;
-           
-            //rigidbody.AddForce(new Vector3(0, 0, -1) * 500);
             rigidbody.isKinematic = true;
             collider.isTrigger = true;
+            
             StartCoroutine(timeskip()); 
 
         }

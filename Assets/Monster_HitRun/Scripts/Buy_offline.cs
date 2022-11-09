@@ -7,8 +7,8 @@ public class Buy_offline : MonoBehaviour
 {
     
     public int usecoinsOffline;
-    int Propertiesoffline = 0;
-    private int coinsupOffline;
+    int Propertiesoffline = 5;
+    private int coinsupOffline=50;
     [SerializeField]private Text usecoinsOfflinetext;
     [SerializeField]private Text Propertiesofflinetext;
     [SerializeField] private ParticleSystem up;
@@ -17,11 +17,11 @@ public class Buy_offline : MonoBehaviour
     
     public void Init()
     {
-        coinsupOffline = 50;
-        Propertiesoffline = 5;
-        //coinsupOffline = PlayerPrefs.GetInt("coinsupOffline");
-        //usecoinsOffline = PlayerPrefs.GetInt("usecoinsOffline");
-        //Propertiesoffline = PlayerPrefs.GetInt("Propertiesoffline");
+        //coinsupOffline = 50;
+        //Propertiesoffline = 5;
+        coinsupOffline = PlayerPrefs.GetInt("coinsupOffline");
+        usecoinsOffline = PlayerPrefs.GetInt("usecoinsOffline",50);
+        Propertiesoffline = PlayerPrefs.GetInt("Propertiesoffline",5);
 
     }
     private void Update()
